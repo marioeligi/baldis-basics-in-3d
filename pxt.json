@@ -4,7 +4,8 @@
     "dependencies": {
         "device": "*",
         "pxt-raycasting": "github:aqeeaqee/pxt-raycasting#v0.3.13",
-        "arcade-story": "github:microsoft/arcade-storytelling#v1.0.3"
+        "arcade-story": "github:microsoft/arcade-storytelling#v1.0.3",
+        "arcade-tilemap-a-star": "github:jwunderl/arcade-tilemap-a-star#v0.4.0"
     },
     "files": [
         "main.blocks",
