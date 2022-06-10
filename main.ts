@@ -5,6 +5,7 @@ namespace SpriteKind {
     export const soda = SpriteKind.create()
     export const riunning = SpriteKind.create()
     export const playyyy = SpriteKind.create()
+    export const roebot = SpriteKind.create()
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Notebook, function (sprite, otherSprite) {
     info.changeScoreBy(1)
@@ -238,6 +239,10 @@ function Loaditems () {
         tiles.setTileAt(BSODA.tilemapLocation(), assets.tile`transparency16`)
     }
 }
+scene.onPathCompletion(SpriteKind.roebot, function (sprite, location) {
+    prizeeroadcar = scene.aStar(playtime.tilemapLocation(), list[randint(0, 18)])
+    scene.followPath(prize, prizeeroadcar, 20)
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     if (yeah == 1) {
         game.over(false)
@@ -246,6 +251,8 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 let rev: tiles.Location[] = []
 let mySprite5: Sprite = null
 let yeah = 0
+let prize: Sprite = null
+let prizeeroadcar: tiles.Location[] = []
 let BSODA: Sprite = null
 let scsrs: Sprite = null
 let qrtr: Sprite = null
@@ -630,6 +637,27 @@ forever(function () {
             tiles.placeOnTile(principle, tiles.getTileLocation(12, 16))
             ppp = scene.aStar(principle.tilemapLocation(), principle.tilemapLocation())
             scene.followPath(playtime, ppp)
+            prize = sprites.create(img`
+                . . . . . . d d d . . . . . . 
+                . . . . . d f d 1 d . . . . . 
+                . . . . . d d d d d . . . . . 
+                . . . . . d 2 2 2 d . . . . . 
+                . d d d . 9 d d d 9 . d d d . 
+                . d d d 9 . . . . . 9 d d d . 
+                . d d d 9 9 9 9 9 9 9 d d d . 
+                . . . 9 9 . . . . . 9 9 . . . 
+                . . . 9 . 9 2 . 2 9 . 9 . . . 
+                . . . 9 . 2 2 2 9 2 . 9 . . . 
+                . . . 9 9 2 2 9 2 2 9 9 . . . 
+                . . . 9 . . 9 2 2 . . 9 . . . 
+                . . . 9 . 9 . 2 . 9 . 9 . . . 
+                f f f 9 9 . . . . . 9 9 f f f 
+                f f f 9 9 9 9 9 9 9 9 9 f f f 
+                f f f . . . . . . . . . f f f 
+                `, SpriteKind.roebot)
+            tiles.placeOnTile(prize, tiles.getTileLocation(12, 16))
+            prizeeroadcar = scene.aStar(principle.tilemapLocation(), principle.tilemapLocation())
+            scene.followPath(prize, prizeeroadcar, 50)
         }
     }
     if (info.score() == 10) {
