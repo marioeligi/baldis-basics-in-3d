@@ -3,13 +3,32 @@ namespace SpriteKind {
     export const quarterr = SpriteKind.create()
     export const scissorss = SpriteKind.create()
     export const soda = SpriteKind.create()
+    export const riunning = SpriteKind.create()
+    export const playyyy = SpriteKind.create()
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Notebook, function (sprite, otherSprite) {
     info.changeScoreBy(1)
     otherSprite.destroy()
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile19`, function (sprite, location) {
+    if (cameraplayer.tileKindAt(TileDirection.Center, assets.tile`myTile19`)) {
+        info.changeScoreBy(1)
+        tiles.setWallAt(cameraplayer.tilemapLocation(), true)
+    }
+})
+scene.onPathCompletion(SpriteKind.riunning, function (sprite, location) {
+    principal = scene.aStar(principle.tilemapLocation(), list[randint(0, 18)])
+    scene.followPath(principle, principal)
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.quarterr, function (sprite, otherSprite) {
     otherSprite.destroy()
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile5`, function (sprite, location) {
+    game.over(true)
+})
+scene.onPathCompletion(SpriteKind.playyyy, function (sprite, location) {
+    ppp = scene.aStar(playtime.tilemapLocation(), list[randint(0, 18)])
+    scene.followPath(playtime, ppp)
 })
 function Loaditems () {
     mySprite2 = sprites.create(img`
@@ -231,10 +250,55 @@ let BSODA: Sprite = null
 let scsrs: Sprite = null
 let qrtr: Sprite = null
 let mySprite2: Sprite = null
+let ppp: tiles.Location[] = []
+let principal: tiles.Location[] = []
+let cameraplayer: Sprite = null
+let playtime: Sprite = null
+let principle: Sprite = null
+let list: tiles.Location[] = []
+list = [
+tiles.getTileLocation(2, 4),
+tiles.getTileLocation(2, 16),
+tiles.getTileLocation(2, 26),
+tiles.getTileLocation(12, 4),
+tiles.getTileLocation(12, 13),
+tiles.getTileLocation(12, 16),
+tiles.getTileLocation(12, 19),
+tiles.getTileLocation(12, 21),
+tiles.getTileLocation(17, 13),
+tiles.getTileLocation(17, 8),
+tiles.getTileLocation(17, 13),
+tiles.getTileLocation(22, 4),
+tiles.getTileLocation(22, 8),
+tiles.getTileLocation(22, 19),
+tiles.getTileLocation(27, 11),
+tiles.getTileLocation(30, 19),
+tiles.getTileLocation(30, 26),
+tiles.getTileLocation(17, 4)
+]
+principle = sprites.create(img`
+    . . . . e e e . . . . 
+    . . . e d d d e . . . 
+    . . . d f d f d . . . 
+    d . . d d d d d . . . 
+    f . . d d f d d . . . 
+    f . . . d d d . . . . 
+    f . f f f f f f f . . 
+    . f . f f f f f . f . 
+    . . . f f f f f . f . 
+    . . . f f f f f . . f 
+    . . . f f f f f . . f 
+    . . . f f f f f . . d 
+    . . . c c c c c . . . 
+    . . . c c c c c . . . 
+    . . . c c . c c . . . 
+    . . . c c . c c . . . 
+    `, SpriteKind.riunning)
+principle.destroy()
 tiles.setCurrentTilemap(tilemap`level3`)
 let mad_baldi = 0
 info.setScore(0)
-let mySprite3 = sprites.create(img`
+let baldi = sprites.create(img`
     . . . . . e . . . . . 
     . . . . d e d . . . . 
     . . . d f d f d . . . 
@@ -252,13 +316,35 @@ let mySprite3 = sprites.create(img`
     . . . 8 8 . 8 8 . . . 
     . . . 8 8 . 8 8 . . . 
     `, SpriteKind.Enemy)
-let mySprite = Render.getRenderSpriteVariable()
+playtime = sprites.create(img`
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    `, SpriteKind.playyyy)
+playtime.destroy()
+cameraplayer = Render.getRenderSpriteVariable()
 Render.setViewMode(ViewMode.raycastingView)
-tiles.placeOnTile(mySprite, tiles.getTileLocation(1, 16))
+tiles.placeOnTile(cameraplayer, tiles.getTileLocation(1, 16))
 Render.moveWithController(2, 4)
-Render.setZOffset(mySprite, 1)
-tiles.placeOnTile(mySprite3, tiles.getTileLocation(2, 16))
+Render.setZOffset(cameraplayer, 1)
+tiles.placeOnTile(baldi, tiles.getTileLocation(2, 16))
 Loaditems()
+game.onUpdate(function () {
+	
+})
 forever(function () {
     if (info.score() == 1) {
         if (mad_baldi != 0) {
@@ -289,7 +375,7 @@ forever(function () {
             yeah = 1
             mad_baldi = 1
             animation.runImageAnimation(
-            mySprite3,
+            baldi,
             [img`
                 . . . . . e . . . . . 
                 . . . . d e d . . . 5 
@@ -501,17 +587,66 @@ forever(function () {
             for (let value of tiles.getTilesByType(assets.tile`myTile4`)) {
                 tiles.setWallAt(value, false)
             }
-            tiles.placeOnTile(mySprite3, tiles.getTileLocation(12, 16))
+            tiles.placeOnTile(baldi, tiles.getTileLocation(12, 16))
+            principle = sprites.create(img`
+                . . . . e e e . . . . 
+                . . . e d d d e . . . 
+                . . . d f d f d . . . 
+                d . . d d d d d . . . 
+                f . . d d f d d . . . 
+                f . . . d d d . . . . 
+                f . f f f f f f f . . 
+                . f . f f f f f . f . 
+                . . . f f f f f . f . 
+                . . . f f f f f . . f 
+                . . . f f f f f . . f 
+                . . . f f f f f . . d 
+                . . . c c c c c . . . 
+                . . . c c c c c . . . 
+                . . . c c . c c . . . 
+                . . . c c . c c . . . 
+                `, SpriteKind.riunning)
+            tiles.placeOnTile(principle, tiles.getTileLocation(12, 16))
+            principal = scene.aStar(principle.tilemapLocation(), principle.tilemapLocation())
+            scene.followPath(principle, principal)
+            playtime = sprites.create(img`
+                . . . f f f f f f f . . . . . 
+                . f f f . f f d f f f . . . . 
+                d f . . . d d d d d f f . . . 
+                d d 2 . . d f d f d . f f . . 
+                . 2 2 2 . . d d d d . . . f . 
+                . . 2 2 2 2 2 2 2 2 2 2 . f f 
+                . . . 2 2 2 2 2 2 2 2 2 2 . f 
+                . . . . 2 2 2 2 2 2 . 2 2 2 f 
+                . . . 2 2 2 2 2 2 2 . . 2 d f 
+                . e . 2 2 2 2 2 2 2 . . . d d 
+                . e e 8 2 2 2 2 2 2 . . . . . 
+                . e e 8 8 2 2 2 2 2 . . . . . 
+                . e e . . 8 8 2 2 2 . . . . . 
+                . . . . . . . 8 8 8 . . . . . 
+                . . . . . . . . e e e . . . . 
+                . . . . . . . . e e e e . . . 
+                `, SpriteKind.playyyy)
+            tiles.placeOnTile(principle, tiles.getTileLocation(12, 16))
+            ppp = scene.aStar(principle.tilemapLocation(), principle.tilemapLocation())
+            scene.followPath(playtime, ppp)
         }
     }
-    if (info.score() == 11) {
-        game.over(true)
+    if (info.score() == 10) {
+        for (let value of tiles.getTilesByType(assets.tile`myTile5`)) {
+            tiles.setWallAt(value, false)
+        }
+    }
+    if (info.score() == 7) {
+        for (let value of tiles.getTilesByType(assets.tile`myTile19`)) {
+            tiles.setWallAt(value, false)
+        }
     }
 })
 forever(function () {
     if (yeah == 1) {
-        rev = scene.aStar(mySprite3.tilemapLocation(), mySprite.tilemapLocation())
-        scene.followPath(mySprite3, rev, (info.score() - 1) * 10)
+        rev = scene.aStar(baldi.tilemapLocation(), cameraplayer.tilemapLocation())
+        scene.followPath(baldi, rev, (info.score() - 1) * 10)
         pause(5000)
     }
 })
