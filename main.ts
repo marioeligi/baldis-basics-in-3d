@@ -417,6 +417,7 @@ tiles.placeOnTile(cameraplayer, tiles.getTileLocation(1, 16))
 Render.moveWithController(2, 4)
 Render.setZOffset(cameraplayer, 1)
 tiles.placeOnTile(baldi, tiles.getTileLocation(2, 16))
+Loaditems()
 forever(function () {
     if (info.score() == 1) {
         if (mad_baldi != 0) {
