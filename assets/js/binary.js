@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.8.29/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.4.3","target":"arcade","targetVersion":"1.8.29","repo":"marioeligi/baldis-basics-in-3d"}
-// total=2023852 new=10.84% cached=84.26% other=4.89%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.8.29/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.4.4","target":"arcade","targetVersion":"1.8.29","repo":"marioeligi/baldis-basics-in-3d"}
+// total=2024033 new=10.85% cached=84.26% other=4.89%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -568,7 +568,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P26166(s) {
+function _main___P28344(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1376,41 +1376,41 @@ switch (step) {
     s.callLocIdx = 65; s.pc = 39; return s.tmp_0;
   case 39:
     r0 = s.retval;
-    globals.Notebook___25596 = (r0);
+    globals.Notebook___27803 = (r0);
     s.tmp_0 = SpriteKind_create__P2266_mk(s);
     s.callLocIdx = 66; s.pc = 40; return s.tmp_0;
   case 40:
     r0 = s.retval;
-    globals.quarterr___25599 = (r0);
+    globals.quarterr___27806 = (r0);
     s.tmp_0 = SpriteKind_create__P2266_mk(s);
     s.callLocIdx = 67; s.pc = 41; return s.tmp_0;
   case 41:
     r0 = s.retval;
-    globals.scissorss___25602 = (r0);
+    globals.scissorss___27809 = (r0);
     s.tmp_0 = SpriteKind_create__P2266_mk(s);
     s.callLocIdx = 68; s.pc = 42; return s.tmp_0;
   case 42:
     r0 = s.retval;
-    globals.soda___25605 = (r0);
+    globals.soda___27812 = (r0);
     s.tmp_0 = SpriteKind_create__P2266_mk(s);
     s.callLocIdx = 69; s.pc = 43; return s.tmp_0;
   case 43:
     r0 = s.retval;
-    globals.riunning___25608 = (r0);
+    globals.riunning___27815 = (r0);
     s.tmp_0 = SpriteKind_create__P2266_mk(s);
     s.callLocIdx = 70; s.pc = 44; return s.tmp_0;
   case 44:
     r0 = s.retval;
-    globals.playyyy___25611 = (r0);
+    globals.playyyy___27818 = (r0);
     s.tmp_0 = SpriteKind_create__P2266_mk(s);
     s.callLocIdx = 71; s.pc = 45; return s.tmp_0;
   case 45:
     r0 = s.retval;
-    globals.roebot___25614 = (r0);
+    globals.roebot___27821 = (r0);
     s.tmp_0 = sprites_onOverlap__P2245_mk(s);
     s.tmp_0.arg0 = globals.Player___2267;
-    s.tmp_0.arg1 = globals.Notebook___25596;
-    s.tmp_0.arg2 = inline__P25619;
+    s.tmp_0.arg1 = globals.Notebook___27803;
+    s.tmp_0.arg2 = inline__P27826;
     s.callLocIdx = 74; s.pc = 46; return s.tmp_0;
   case 46:
     r0 = s.retval;
@@ -1422,106 +1422,106 @@ switch (step) {
   case 48:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.tmp_0.arg2 = inline__P25631;
+    s.tmp_0.arg2 = inline__P27838;
     s.callLocIdx = 81; s.pc = 47; return s.tmp_0;
   case 47:
     r0 = s.retval;
     s.tmp_0 = sprites_onOverlap__P2245_mk(s);
     s.tmp_0.arg0 = globals.Player___2267;
-    s.tmp_0.arg1 = globals.roebot___25614;
-    s.tmp_0.arg2 = inline__P25648;
-    s.callLocIdx = 86; s.pc = 49; return s.tmp_0;
+    s.tmp_0.arg1 = globals.roebot___27821;
+    s.tmp_0.arg2 = inline__P27855;
+    s.callLocIdx = 87; s.pc = 49; return s.tmp_0;
   case 49:
     r0 = s.retval;
     s.tmp_0 = controller_Button_onEvent__P1986_mk(s);
     s.tmp_0.arg0 = globals.A___1907;
     s.tmp_0.arg1 = 2049;
-    s.tmp_0.arg2 = inline__P25680;
-    s.callLocIdx = 90; s.pc = 50; return s.tmp_0;
+    s.tmp_0.arg2 = inline__P27889;
+    s.callLocIdx = 91; s.pc = 50; return s.tmp_0;
   case 50:
     r0 = s.retval;
     s.tmp_0 = scene_onPathCompletion__P4241_mk(s);
-    s.tmp_0.arg0 = globals.riunning___25608;
-    s.tmp_0.arg1 = inline__P25694;
-    s.callLocIdx = 93; s.pc = 51; return s.tmp_0;
+    s.tmp_0.arg0 = globals.riunning___27815;
+    s.tmp_0.arg1 = inline__P27903;
+    s.callLocIdx = 94; s.pc = 51; return s.tmp_0;
   case 51:
     r0 = s.retval;
     s.tmp_0 = controller_Button_onEvent__P1986_mk(s);
     s.tmp_0.arg0 = globals.A___1907;
     s.tmp_0.arg1 = 2048;
-    s.tmp_0.arg2 = inline__P25712;
-    s.callLocIdx = 97; s.pc = 52; return s.tmp_0;
+    s.tmp_0.arg2 = inline__P27921;
+    s.callLocIdx = 98; s.pc = 52; return s.tmp_0;
   case 52:
     r0 = s.retval;
     s.tmp_0 = sprites_onOverlap__P2245_mk(s);
     s.tmp_0.arg0 = globals.Player___2267;
-    s.tmp_0.arg1 = globals.quarterr___25599;
-    s.tmp_0.arg2 = inline__P25727;
-    s.callLocIdx = 99; s.pc = 53; return s.tmp_0;
+    s.tmp_0.arg1 = globals.quarterr___27806;
+    s.tmp_0.arg2 = inline__P27936;
+    s.callLocIdx = 100; s.pc = 53; return s.tmp_0;
   case 53:
     r0 = s.retval;
     s.tmp_0 = scene_onOverlapTile__P2247_mk(s);
     s.tmp_0.arg0 = globals.Player___2267;
     s.tmp_1 = helpers_getTileByName__P3025_mk(s);
     s.tmp_1.arg0 = "myTile5";
-    s.callLocIdx = 100; s.pc = 55; return s.tmp_1;
+    s.callLocIdx = 101; s.pc = 55; return s.tmp_1;
   case 55:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.tmp_0.arg2 = inline__P25738;
-    s.callLocIdx = 102; s.pc = 54; return s.tmp_0;
+    s.tmp_0.arg2 = inline__P27947;
+    s.callLocIdx = 103; s.pc = 54; return s.tmp_0;
   case 54:
     r0 = s.retval;
     s.tmp_0 = scene_onPathCompletion__P4241_mk(s);
-    s.tmp_0.arg0 = globals.playyyy___25611;
-    s.tmp_0.arg1 = inline__P25745;
-    s.callLocIdx = 105; s.pc = 56; return s.tmp_0;
+    s.tmp_0.arg0 = globals.playyyy___27818;
+    s.tmp_0.arg1 = inline__P27954;
+    s.callLocIdx = 106; s.pc = 56; return s.tmp_0;
   case 56:
     r0 = s.retval;
     s.tmp_0 = scene_onPathCompletion__P4241_mk(s);
-    s.tmp_0.arg0 = globals.roebot___25614;
-    s.tmp_0.arg1 = inline__P25863;
-    s.callLocIdx = 150; s.pc = 57; return s.tmp_0;
+    s.tmp_0.arg0 = globals.roebot___27821;
+    s.tmp_0.arg1 = inline__P28072;
+    s.callLocIdx = 151; s.pc = 57; return s.tmp_0;
   case 57:
     r0 = s.retval;
     s.tmp_0 = sprites_onOverlap__P2245_mk(s);
     s.tmp_0.arg0 = globals.Player___2267;
     s.tmp_0.arg1 = globals.Enemy___2270;
-    s.tmp_0.arg2 = inline__P25879;
-    s.callLocIdx = 152; s.pc = 58; return s.tmp_0;
+    s.tmp_0.arg2 = inline__P28088;
+    s.callLocIdx = 153; s.pc = 58; return s.tmp_0;
   case 58:
     r0 = s.retval;
     r0 = pxsim_Array__mk();
-    globals.rev___25888 = (r0);
-    globals.mySprite5___25891 = (null);
-    globals.yeah___25884 = (0);
+    globals.rev___28097 = (r0);
+    globals.mySprite5___28100 = (null);
+    globals.yeah___28093 = (0);
     r0 = pxsim_Array__mk();
-    globals.prizeeroadcar___25867 = (r0);
-    globals.mySprite2___25762 = (null);
+    globals.prizeeroadcar___28076 = (r0);
+    globals.mySprite2___27971 = (null);
     r0 = pxsim_Array__mk();
-    globals.ppp___25749 = (r0);
+    globals.ppp___27958 = (r0);
     r0 = pxsim_Array__mk();
-    globals.principal___25698 = (r0);
-    globals.prize___25674 = (null);
-    globals.cameraplayer___25636 = (null);
-    globals.playtime___25757 = (null);
-    globals.principle___25706 = (null);
+    globals.principal___27907 = (r0);
+    globals.prize___27881 = (null);
+    globals.cameraplayer___27843 = (null);
+    globals.playtime___27966 = (null);
+    globals.principle___27915 = (null);
     r0 = pxsim_Array__mk();
-    globals.list___25665 = (r0);
-    globals.prize_push_period___25653 = (0);
+    globals.list___27872 = (r0);
+    globals.prize_push_period___27860 = (0);
     s.tmp_0 = scene_setBackgroundImage__P2620_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex25898);
+    r0 = pxsim.image.ofBuffer(_hex28107);
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 153; s.pc = 59; return s.tmp_0;
+    s.callLocIdx = 154; s.pc = 59; return s.tmp_0;
   case 59:
     r0 = s.retval;
-    globals.prize_push_period___25653 = (1);
+    globals.prize_push_period___27860 = (1);
     r0 = pxsim_Array__mk();
     s.tmp_0 = r0;
     s.tmp_2 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_2.arg0 = 2;
     s.tmp_2.arg1 = 4;
-    s.callLocIdx = 154; s.pc = 60; return s.tmp_2;
+    s.callLocIdx = 155; s.pc = 60; return s.tmp_2;
   case 60:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -1529,7 +1529,7 @@ switch (step) {
     s.tmp_4 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_4.arg0 = 2;
     s.tmp_4.arg1 = 16;
-    s.callLocIdx = 155; s.pc = 61; return s.tmp_4;
+    s.callLocIdx = 156; s.pc = 61; return s.tmp_4;
   case 61:
     r0 = s.retval;
     s.tmp_3 = r0;
@@ -1537,7 +1537,7 @@ switch (step) {
     s.tmp_6 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_6.arg0 = 2;
     s.tmp_6.arg1 = 26;
-    s.callLocIdx = 156; s.pc = 62; return s.tmp_6;
+    s.callLocIdx = 157; s.pc = 62; return s.tmp_6;
   case 62:
     r0 = s.retval;
     s.tmp_5 = r0;
@@ -1545,7 +1545,7 @@ switch (step) {
     s.tmp_8 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_8.arg0 = 12;
     s.tmp_8.arg1 = 4;
-    s.callLocIdx = 157; s.pc = 63; return s.tmp_8;
+    s.callLocIdx = 158; s.pc = 63; return s.tmp_8;
   case 63:
     r0 = s.retval;
     s.tmp_7 = r0;
@@ -1553,7 +1553,7 @@ switch (step) {
     s.tmp_10 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_10.arg0 = 12;
     s.tmp_10.arg1 = 13;
-    s.callLocIdx = 158; s.pc = 64; return s.tmp_10;
+    s.callLocIdx = 159; s.pc = 64; return s.tmp_10;
   case 64:
     r0 = s.retval;
     s.tmp_9 = r0;
@@ -1561,7 +1561,7 @@ switch (step) {
     s.tmp_12 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_12.arg0 = 12;
     s.tmp_12.arg1 = 16;
-    s.callLocIdx = 159; s.pc = 65; return s.tmp_12;
+    s.callLocIdx = 160; s.pc = 65; return s.tmp_12;
   case 65:
     r0 = s.retval;
     s.tmp_11 = r0;
@@ -1569,7 +1569,7 @@ switch (step) {
     s.tmp_14 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_14.arg0 = 12;
     s.tmp_14.arg1 = 19;
-    s.callLocIdx = 160; s.pc = 66; return s.tmp_14;
+    s.callLocIdx = 161; s.pc = 66; return s.tmp_14;
   case 66:
     r0 = s.retval;
     s.tmp_13 = r0;
@@ -1577,7 +1577,7 @@ switch (step) {
     s.tmp_16 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_16.arg0 = 12;
     s.tmp_16.arg1 = 21;
-    s.callLocIdx = 161; s.pc = 67; return s.tmp_16;
+    s.callLocIdx = 162; s.pc = 67; return s.tmp_16;
   case 67:
     r0 = s.retval;
     s.tmp_15 = r0;
@@ -1585,7 +1585,7 @@ switch (step) {
     s.tmp_18 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_18.arg0 = 17;
     s.tmp_18.arg1 = 13;
-    s.callLocIdx = 162; s.pc = 68; return s.tmp_18;
+    s.callLocIdx = 163; s.pc = 68; return s.tmp_18;
   case 68:
     r0 = s.retval;
     s.tmp_17 = r0;
@@ -1593,7 +1593,7 @@ switch (step) {
     s.tmp_20 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_20.arg0 = 17;
     s.tmp_20.arg1 = 8;
-    s.callLocIdx = 163; s.pc = 69; return s.tmp_20;
+    s.callLocIdx = 164; s.pc = 69; return s.tmp_20;
   case 69:
     r0 = s.retval;
     s.tmp_19 = r0;
@@ -1601,7 +1601,7 @@ switch (step) {
     s.tmp_22 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_22.arg0 = 17;
     s.tmp_22.arg1 = 13;
-    s.callLocIdx = 164; s.pc = 70; return s.tmp_22;
+    s.callLocIdx = 165; s.pc = 70; return s.tmp_22;
   case 70:
     r0 = s.retval;
     s.tmp_21 = r0;
@@ -1609,7 +1609,7 @@ switch (step) {
     s.tmp_24 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_24.arg0 = 22;
     s.tmp_24.arg1 = 4;
-    s.callLocIdx = 165; s.pc = 71; return s.tmp_24;
+    s.callLocIdx = 166; s.pc = 71; return s.tmp_24;
   case 71:
     r0 = s.retval;
     s.tmp_23 = r0;
@@ -1617,7 +1617,7 @@ switch (step) {
     s.tmp_26 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_26.arg0 = 22;
     s.tmp_26.arg1 = 8;
-    s.callLocIdx = 166; s.pc = 72; return s.tmp_26;
+    s.callLocIdx = 167; s.pc = 72; return s.tmp_26;
   case 72:
     r0 = s.retval;
     s.tmp_25 = r0;
@@ -1625,7 +1625,7 @@ switch (step) {
     s.tmp_28 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_28.arg0 = 22;
     s.tmp_28.arg1 = 19;
-    s.callLocIdx = 167; s.pc = 73; return s.tmp_28;
+    s.callLocIdx = 168; s.pc = 73; return s.tmp_28;
   case 73:
     r0 = s.retval;
     s.tmp_27 = r0;
@@ -1633,7 +1633,7 @@ switch (step) {
     s.tmp_30 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_30.arg0 = 27;
     s.tmp_30.arg1 = 11;
-    s.callLocIdx = 168; s.pc = 74; return s.tmp_30;
+    s.callLocIdx = 169; s.pc = 74; return s.tmp_30;
   case 74:
     r0 = s.retval;
     s.tmp_29 = r0;
@@ -1641,7 +1641,7 @@ switch (step) {
     s.tmp_32 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_32.arg0 = 30;
     s.tmp_32.arg1 = 19;
-    s.callLocIdx = 169; s.pc = 75; return s.tmp_32;
+    s.callLocIdx = 170; s.pc = 75; return s.tmp_32;
   case 75:
     r0 = s.retval;
     s.tmp_31 = r0;
@@ -1649,7 +1649,7 @@ switch (step) {
     s.tmp_34 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_34.arg0 = 30;
     s.tmp_34.arg1 = 26;
-    s.callLocIdx = 170; s.pc = 76; return s.tmp_34;
+    s.callLocIdx = 171; s.pc = 76; return s.tmp_34;
   case 76:
     r0 = s.retval;
     s.tmp_33 = r0;
@@ -1657,135 +1657,135 @@ switch (step) {
     s.tmp_36 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_36.arg0 = 17;
     s.tmp_36.arg1 = 4;
-    s.callLocIdx = 171; s.pc = 77; return s.tmp_36;
+    s.callLocIdx = 172; s.pc = 77; return s.tmp_36;
   case 77:
     r0 = s.retval;
     s.tmp_35 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_35);
-    globals.list___25665 = (s.tmp_0);
+    globals.list___27872 = (s.tmp_0);
     s.tmp_0 = sprites_create__P2064_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex25923);
+    r0 = pxsim.image.ofBuffer(_hex28132);
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = globals.riunning___25608;
-    s.callLocIdx = 172; s.pc = 78; return s.tmp_0;
+    s.tmp_0.arg1 = globals.riunning___27815;
+    s.callLocIdx = 173; s.pc = 78; return s.tmp_0;
   case 78:
     r0 = s.retval;
-    globals.principle___25706 = (r0);
+    globals.principle___27915 = (r0);
     s.tmp_0 = Sprite_destroy__P2215_mk(s);
-    s.tmp_0.arg0 = globals.principle___25706;
+    s.tmp_0.arg0 = globals.principle___27915;
     s.tmp_0.arg1 = undefined;
     s.tmp_0.arg2 = undefined;
-    s.callLocIdx = 173; s.pc = 79; return s.tmp_0;
+    s.callLocIdx = 174; s.pc = 79; return s.tmp_0;
   case 79:
     r0 = s.retval;
     s.tmp_0 = tiles_setCurrentTilemap__P2503_mk(s);
     s.tmp_1 = helpers_getTilemapByName__P3022_mk(s);
     s.tmp_1.arg0 = "level3";
-    s.callLocIdx = 174; s.pc = 81; return s.tmp_1;
+    s.callLocIdx = 175; s.pc = 81; return s.tmp_1;
   case 81:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 175; s.pc = 80; return s.tmp_0;
+    s.callLocIdx = 176; s.pc = 80; return s.tmp_0;
   case 80:
     r0 = s.retval;
-    globals.mad_baldi___25933 = (0);
+    globals.mad_baldi___28142 = (0);
     s.tmp_0 = info_setScore__P2349_mk(s);
     s.tmp_0.arg0 = 0;
-    s.callLocIdx = 176; s.pc = 82; return s.tmp_0;
+    s.callLocIdx = 177; s.pc = 82; return s.tmp_0;
   case 82:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P2064_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex25939);
+    r0 = pxsim.image.ofBuffer(_hex28148);
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = globals.Enemy___2270;
-    s.callLocIdx = 177; s.pc = 83; return s.tmp_0;
+    s.callLocIdx = 178; s.pc = 83; return s.tmp_0;
   case 83:
     r0 = s.retval;
-    globals.baldi___25936 = (r0);
+    globals.baldi___28145 = (r0);
     s.tmp_0 = sprites_create__P2064_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex25944);
+    r0 = pxsim.image.ofBuffer(_hex28153);
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = globals.playyyy___25611;
-    s.callLocIdx = 178; s.pc = 84; return s.tmp_0;
+    s.tmp_0.arg1 = globals.playyyy___27818;
+    s.callLocIdx = 179; s.pc = 84; return s.tmp_0;
   case 84:
     r0 = s.retval;
-    globals.playtime___25757 = (r0);
+    globals.playtime___27966 = (r0);
     s.tmp_0 = Sprite_destroy__P2215_mk(s);
-    s.tmp_0.arg0 = globals.playtime___25757;
+    s.tmp_0.arg0 = globals.playtime___27966;
     s.tmp_0.arg1 = undefined;
     s.tmp_0.arg2 = undefined;
-    s.callLocIdx = 179; s.pc = 85; return s.tmp_0;
+    s.callLocIdx = 180; s.pc = 85; return s.tmp_0;
   case 85:
     r0 = s.retval;
     r0 = globals.raycastingRender___4298.fields["sprSelf"];
-    globals.cameraplayer___25636 = (r0);
+    globals.cameraplayer___27843 = (r0);
     s.tmp_0 = Render_setViewMode__P4318_mk(s);
     s.tmp_0.arg0 = 1;
-    s.callLocIdx = 181; s.pc = 86; return s.tmp_0;
+    s.callLocIdx = 182; s.pc = 86; return s.tmp_0;
   case 86:
     r0 = s.retval;
     s.tmp_0 = tiles_placeOnTile__P2512_mk(s);
-    s.tmp_0.arg0 = globals.cameraplayer___25636;
+    s.tmp_0.arg0 = globals.cameraplayer___27843;
     s.tmp_1 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_1.arg0 = 1;
     s.tmp_1.arg1 = 16;
-    s.callLocIdx = 182; s.pc = 88; return s.tmp_1;
+    s.callLocIdx = 183; s.pc = 88; return s.tmp_1;
   case 88:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 183; s.pc = 87; return s.tmp_0;
+    s.callLocIdx = 184; s.pc = 87; return s.tmp_0;
   case 87:
     r0 = s.retval;
     s.tmp_0 = Render_moveWithController__P4329_mk(s);
     s.tmp_0.arg0 = 2;
     s.tmp_0.arg1 = 4;
-    s.callLocIdx = 184; s.pc = 89; return s.tmp_0;
+    s.callLocIdx = 185; s.pc = 89; return s.tmp_0;
   case 89:
     r0 = s.retval;
     s.tmp_0 = Render_setZOffset__P4324_mk(s);
-    s.tmp_0.arg0 = globals.cameraplayer___25636;
+    s.tmp_0.arg0 = globals.cameraplayer___27843;
     s.tmp_0.arg1 = 1;
     s.tmp_0.arg2 = 0;
-    s.callLocIdx = 185; s.pc = 90; return s.tmp_0;
+    s.callLocIdx = 186; s.pc = 90; return s.tmp_0;
   case 90:
     r0 = s.retval;
     s.tmp_0 = tiles_placeOnTile__P2512_mk(s);
-    s.tmp_0.arg0 = globals.baldi___25936;
+    s.tmp_0.arg0 = globals.baldi___28145;
     s.tmp_1 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_1.arg0 = 2;
     s.tmp_1.arg1 = 16;
-    s.callLocIdx = 186; s.pc = 92; return s.tmp_1;
+    s.callLocIdx = 187; s.pc = 92; return s.tmp_1;
   case 92:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 187; s.pc = 91; return s.tmp_0;
+    s.callLocIdx = 188; s.pc = 91; return s.tmp_0;
   case 91:
     r0 = s.retval;
-    s.tmp_0 = Loaditems__P25760_mk(s);
-    s.callLocIdx = 188; s.pc = 93; return s.tmp_0;
+    s.tmp_0 = Loaditems__P27969_mk(s);
+    s.callLocIdx = 189; s.pc = 93; return s.tmp_0;
   case 93:
     r0 = s.retval;
     s.tmp_0 = forever__P1877_mk(s);
-    s.tmp_0.arg0 = inline__P25966;
-    s.callLocIdx = 229; s.pc = 94; return s.tmp_0;
+    s.tmp_0.arg0 = inline__P28175;
+    s.callLocIdx = 230; s.pc = 94; return s.tmp_0;
   case 94:
     r0 = s.retval;
     s.tmp_0 = forever__P1877_mk(s);
-    s.tmp_0.arg0 = inline__P26100;
-    s.callLocIdx = 236; s.pc = 95; return s.tmp_0;
+    s.tmp_0.arg0 = inline__P28309;
+    s.callLocIdx = 237; s.pc = 95; return s.tmp_0;
   case 95:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-_main___P26166.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-story/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P26166.continuations = [  ]
+_main___P28344.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-story/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P28344.continuations = [  ]
 
-function _main___P26166_mk(s) {
+function _main___P28344_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P26166, depth: s.depth + 1,
+        parent: s, fn: _main___P28344, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1935,10 +1935,10 @@ const _hex7191 = pxsim.BufferMethods.createBufferFromHex("8704100010000000000000
 const _hex7195 = pxsim.BufferMethods.createBufferFromHex("87041000100000000000000000000000000000000000000000000000030000000030003000000000003003330000000000003303000000000000333333000000003003033000000000300003300000003003000330000000300300033000000000330003330000000030333300000000000000000000000000000000000000000000000000000000")
 const _hex7199 = pxsim.BufferMethods.createBufferFromHex("8704100010000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff")
 const _hex7203 = pxsim.BufferMethods.createBufferFromHex("87041000100000001111111111111111212222211111111121212121111111111111112111111111211121211111111111221221111111112111212111111111111111211111111121112121111111112122222111111111211121211111111111111121111111112111112111111111212222211111111121111121111111111111111111111111")
-const _hex25898 = pxsim.BufferMethods.createBufferFromHex("8704a0007800000099999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc")
-const _hex25923 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000d0ff0f00000000000000f0000000000000000f00000000e0dd0dffffffccccdedfddffffffccccdedddfffffffcc00dedfddffffffcccce0dd0dffffffcccc0000000f00000000000000f00f00000000000000f0df0000")
-const _hex25939 = pxsim.BufferMethods.createBufferFromHex("87040b00100000000000000070d700000000007007000000000000070000000000dd0d7777778888d0dfd27777778888eedd2d7777778800d0dfd2777777888800dd0d7777778888000000070000000000000070070000000000000070d70000")
-const _hex25944 = pxsim.BufferMethods.createBufferFromHex("87040f0010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
+const _hex28107 = pxsim.BufferMethods.createBufferFromHex("8704a0007800000099999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc99999999999999999999999999999999999999999999999999999999999999cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc")
+const _hex28132 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000d0ff0f00000000000000f0000000000000000f00000000e0dd0dffffffccccdedfddffffffccccdedddfffffffcc00dedfddffffffcccce0dd0dffffffcccc0000000f00000000000000f00f00000000000000f0df0000")
+const _hex28148 = pxsim.BufferMethods.createBufferFromHex("87040b00100000000000000070d700000000007007000000000000070000000000dd0d7777778888d0dfd27777778888eedd2d7777778800d0dfd2777777888800dd0d7777778888000000070000000000000070070000000000000070d70000")
+const _hex28153 = pxsim.BufferMethods.createBufferFromHex("87040f0010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
 
 
 
@@ -2671,7 +2671,7 @@ function myTiles_inline__P7283_mk(s) {
 
 
 
-function inline__P25619(s) {
+function inline__P27826(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2702,12 +2702,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P25619.info = {"start":413,"length":86,"line":9,"column":58,"endLine":12,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
+inline__P27826.info = {"start":413,"length":86,"line":9,"column":58,"endLine":12,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
 
-function inline__P25619_mk(s) {
+function inline__P27826_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P25619, depth: s.depth + 1,
+        parent: s, fn: inline__P27826, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -2718,7 +2718,7 @@ function inline__P25619_mk(s) {
 
 
 
-function inline__P25631(s) {
+function inline__P27838(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2734,7 +2734,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     s.tmp_1 = Sprite_tileKindAt__P2209_mk(s);
-    s.tmp_1.arg0 = globals.cameraplayer___25636;
+    s.tmp_1.arg0 = globals.cameraplayer___27843;
     s.tmp_1.arg1 = 4;
     s.tmp_2 = helpers_getTileByName__P3025_mk(s);
     s.tmp_2.arg0 = "myTile19";
@@ -2755,7 +2755,7 @@ switch (step) {
     r0 = s.retval;
     s.tmp_0 = tiles_setWallAt__P2505_mk(s);
     s.tmp_1 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_1.arg0 = globals.cameraplayer___25636;
+    s.tmp_1.arg0 = globals.cameraplayer___27843;
     s.callLocIdx = 79; s.pc = 7; return s.tmp_1;
   case 7:
     r0 = s.retval;
@@ -2770,12 +2770,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P25631.info = {"start":563,"length":209,"line":13,"column":62,"endLine":18,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
+inline__P27838.info = {"start":563,"length":209,"line":13,"column":62,"endLine":18,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
 
-function inline__P25631_mk(s) {
+function inline__P27838_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P25631, depth: s.depth + 1,
+        parent: s, fn: inline__P27838, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2789,7 +2789,7 @@ function inline__P25631_mk(s) {
 
 
 
-function inline__P25648(s) {
+function inline__P27855(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2804,15 +2804,15 @@ switch (step) {
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
-    r0 = (globals.prize_push_period___25653 == 1);
+    r0 = (globals.prize_push_period___27860 == 1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
-    globals.prize_push_period___25653 = (0);
+    globals.prize_push_period___27860 = (0);
   case 1:
-    s.tmp_4 = r0 = globals.list___25665;
+    s.tmp_4 = r0 = globals.list___27872;
     s.tmp_6 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_6.arg0 = globals.cameraplayer___25636;
+    s.tmp_6.arg0 = globals.cameraplayer___27843;
     s.callLocIdx = 82; s.pc = 5; return s.tmp_6;
   case 5:
     r0 = s.retval;
@@ -2828,9 +2828,9 @@ switch (step) {
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 2; continue; }
     s.tmp_7 = tiles_placeOnTile__P2512_mk(s);
-    s.tmp_7.arg0 = globals.cameraplayer___25636;
+    s.tmp_7.arg0 = globals.cameraplayer___27843;
     s.tmp_8 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_8.arg0 = globals.prize___25674;
+    s.tmp_8.arg0 = globals.prize___27881;
     s.callLocIdx = 83; s.pc = 7; return s.tmp_8;
   case 7:
     r0 = s.retval;
@@ -2839,7 +2839,7 @@ switch (step) {
   case 6:
     r0 = s.retval;
     s.tmp_0 = pause__P413_mk(s);
-    s.tmp_0.arg0 = 200;
+    s.tmp_0.arg0 = 500;
     s.callLocIdx = 85; s.pc = 8; return s.tmp_0;
   case 8:
     r0 = s.retval;
@@ -2847,16 +2847,22 @@ switch (step) {
   case 2:
   case 3:
   case 4:
+    s.tmp_0 = pause__P413_mk(s);
+    s.tmp_0.arg0 = 500;
+    s.callLocIdx = 86; s.pc = 9; return s.tmp_0;
+  case 9:
+    r0 = s.retval;
+    globals.prize_push_period___27860 = (1);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P25648.info = {"start":830,"length":278,"line":19,"column":56,"endLine":27,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
+inline__P27855.info = {"start":830,"length":319,"line":19,"column":56,"endLine":29,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
 
-function inline__P25648_mk(s) {
+function inline__P27855_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P25648, depth: s.depth + 1,
+        parent: s, fn: inline__P27855, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2875,7 +2881,7 @@ function inline__P25648_mk(s) {
 
 
 
-function inline__P25680(s) {
+function inline__P27889(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2888,7 +2894,7 @@ switch (step) {
     s.tmp_0 = Render_setViewAngle__P4323_mk(s);
     s.tmp_2 = Render_getAttribute__P4319_mk(s);
     s.tmp_2.arg0 = 0;
-    s.callLocIdx = 87; s.pc = 2; return s.tmp_2;
+    s.callLocIdx = 88; s.pc = 2; return s.tmp_2;
   case 2:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -2896,25 +2902,25 @@ switch (step) {
     s.tmp_0.arg0 = r0;
     s.tmp_4 = Render_getAttribute__P4319_mk(s);
     s.tmp_4.arg0 = 1;
-    s.callLocIdx = 88; s.pc = 3; return s.tmp_4;
+    s.callLocIdx = 89; s.pc = 3; return s.tmp_4;
   case 3:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = (0 - s.tmp_3);
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 89; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 90; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P25680.info = {"start":1162,"length":135,"line":28,"column":52,"endLine":30,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P27889.info = {"start":1203,"length":135,"line":30,"column":52,"endLine":32,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P25680_mk(s) {
+function inline__P27889_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P25680, depth: s.depth + 1,
+        parent: s, fn: inline__P27889, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2927,7 +2933,7 @@ function inline__P25680_mk(s) {
 
 
 
-function inline__P25694(s) {
+function inline__P27903(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2944,33 +2950,33 @@ switch (step) {
     }
     s.tmp_0 = scene_aStar__P4234_mk(s);
     s.tmp_0.arg0 = s.arg1;
-    s.tmp_1 = r0 = globals.list___25665;
+    s.tmp_1 = r0 = globals.list___27872;
     r0 = pxsim.Math_.randomRange(0, 18);
     s.tmp_2 = r0;
     r0 = pxsim_Array__getAt(s.tmp_1, s.tmp_2);
     s.tmp_0.arg1 = r0;
     s.tmp_0.arg2 = null;
-    s.callLocIdx = 91; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 92; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
-    globals.principal___25698 = (r0);
+    globals.principal___27907 = (r0);
     s.tmp_0 = scene_followPath__P4238_mk(s);
-    s.tmp_0.arg0 = globals.principle___25706;
-    s.tmp_0.arg1 = globals.principal___25698;
+    s.tmp_0.arg0 = globals.principle___27915;
+    s.tmp_0.arg1 = globals.principal___27907;
     s.tmp_0.arg2 = 50;
-    s.callLocIdx = 92; s.pc = 2; return s.tmp_0;
+    s.callLocIdx = 93; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P25694.info = {"start":1343,"length":134,"line":31,"column":44,"endLine":34,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
+inline__P27903.info = {"start":1384,"length":134,"line":33,"column":44,"endLine":36,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
 
-function inline__P25694_mk(s) {
+function inline__P27903_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P25694, depth: s.depth + 1,
+        parent: s, fn: inline__P27903, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2983,7 +2989,7 @@ function inline__P25694_mk(s) {
 
 
 
-function inline__P25712(s) {
+function inline__P27921(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2996,7 +3002,7 @@ switch (step) {
     s.tmp_0 = Render_setViewAngle__P4323_mk(s);
     s.tmp_2 = Render_getAttribute__P4319_mk(s);
     s.tmp_2.arg0 = 0;
-    s.callLocIdx = 94; s.pc = 2; return s.tmp_2;
+    s.callLocIdx = 95; s.pc = 2; return s.tmp_2;
   case 2:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -3004,25 +3010,25 @@ switch (step) {
     s.tmp_0.arg0 = r0;
     s.tmp_4 = Render_getAttribute__P4319_mk(s);
     s.tmp_4.arg0 = 1;
-    s.callLocIdx = 95; s.pc = 3; return s.tmp_4;
+    s.callLocIdx = 96; s.pc = 3; return s.tmp_4;
   case 3:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = (0 - s.tmp_3);
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 96; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 97; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P25712.info = {"start":1532,"length":135,"line":35,"column":53,"endLine":37,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P27921.info = {"start":1573,"length":135,"line":37,"column":53,"endLine":39,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P25712_mk(s) {
+function inline__P27921_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P25712, depth: s.depth + 1,
+        parent: s, fn: inline__P27921, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -3035,7 +3041,7 @@ function inline__P25712_mk(s) {
 
 
 
-function inline__P25727(s) {
+function inline__P27936(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3054,19 +3060,19 @@ switch (step) {
     s.tmp_0.arg0 = s.arg1;
     s.tmp_0.arg1 = undefined;
     s.tmp_0.arg2 = undefined;
-    s.callLocIdx = 98; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 99; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P25727.info = {"start":1727,"length":60,"line":38,"column":58,"endLine":40,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
+inline__P27936.info = {"start":1768,"length":60,"line":40,"column":58,"endLine":42,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
 
-function inline__P25727_mk(s) {
+function inline__P27936_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P25727, depth: s.depth + 1,
+        parent: s, fn: inline__P27936, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -3077,7 +3083,7 @@ function inline__P25727_mk(s) {
 
 
 
-function inline__P25738(s) {
+function inline__P27947(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3095,19 +3101,19 @@ switch (step) {
     s.tmp_0 = game_over__P2703_mk(s);
     s.tmp_0.arg0 = true;
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 101; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 102; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P25738.info = {"start":1850,"length":51,"line":41,"column":61,"endLine":43,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
+inline__P27947.info = {"start":1891,"length":51,"line":43,"column":61,"endLine":45,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
 
-function inline__P25738_mk(s) {
+function inline__P27947_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P25738, depth: s.depth + 1,
+        parent: s, fn: inline__P27947, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -3118,7 +3124,7 @@ function inline__P25738_mk(s) {
 
 
 
-function inline__P25745(s) {
+function inline__P27954(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3135,33 +3141,33 @@ switch (step) {
     }
     s.tmp_0 = scene_aStar__P4234_mk(s);
     s.tmp_0.arg0 = s.arg1;
-    s.tmp_1 = r0 = globals.list___25665;
+    s.tmp_1 = r0 = globals.list___27872;
     r0 = pxsim.Math_.randomRange(0, 18);
     s.tmp_2 = r0;
     r0 = pxsim_Array__getAt(s.tmp_1, s.tmp_2);
     s.tmp_0.arg1 = r0;
     s.tmp_0.arg2 = null;
-    s.callLocIdx = 103; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 104; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
-    globals.ppp___25749 = (r0);
+    globals.ppp___27958 = (r0);
     s.tmp_0 = scene_followPath__P4238_mk(s);
-    s.tmp_0.arg0 = globals.playtime___25757;
-    s.tmp_0.arg1 = globals.ppp___25749;
+    s.tmp_0.arg0 = globals.playtime___27966;
+    s.tmp_0.arg1 = globals.ppp___27958;
     s.tmp_0.arg2 = 50;
-    s.callLocIdx = 104; s.pc = 2; return s.tmp_0;
+    s.callLocIdx = 105; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P25745.info = {"start":1946,"length":121,"line":44,"column":43,"endLine":47,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
+inline__P27954.info = {"start":1987,"length":121,"line":46,"column":43,"endLine":49,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
 
-function inline__P25745_mk(s) {
+function inline__P27954_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P25745, depth: s.depth + 1,
+        parent: s, fn: inline__P27954, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -3174,7 +3180,7 @@ function inline__P25745_mk(s) {
 
 
 
-function inline__P25863(s) {
+function inline__P28072(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3191,33 +3197,33 @@ switch (step) {
     }
     s.tmp_0 = scene_aStar__P4234_mk(s);
     s.tmp_0.arg0 = s.arg1;
-    s.tmp_1 = r0 = globals.list___25665;
+    s.tmp_1 = r0 = globals.list___27872;
     r0 = pxsim.Math_.randomRange(0, 18);
     s.tmp_2 = r0;
     r0 = pxsim_Array__getAt(s.tmp_1, s.tmp_2);
     s.tmp_0.arg1 = r0;
     s.tmp_0.arg2 = null;
-    s.callLocIdx = 148; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 149; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
-    globals.prizeeroadcar___25867 = (r0);
+    globals.prizeeroadcar___28076 = (r0);
     s.tmp_0 = scene_followPath__P4238_mk(s);
-    s.tmp_0.arg0 = globals.prize___25674;
-    s.tmp_0.arg1 = globals.prizeeroadcar___25867;
+    s.tmp_0.arg0 = globals.prize___27881;
+    s.tmp_0.arg1 = globals.prizeeroadcar___28076;
     s.tmp_0.arg2 = 50;
-    s.callLocIdx = 149; s.pc = 2; return s.tmp_0;
+    s.callLocIdx = 150; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P25863.info = {"start":8178,"length":138,"line":190,"column":42,"endLine":193,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
+inline__P28072.info = {"start":8219,"length":138,"line":192,"column":42,"endLine":195,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
 
-function inline__P25863_mk(s) {
+function inline__P28072_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P25863, depth: s.depth + 1,
+        parent: s, fn: inline__P28072, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -3230,7 +3236,7 @@ function inline__P25863_mk(s) {
 
 
 
-function inline__P25879(s) {
+function inline__P28088(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3245,14 +3251,14 @@ switch (step) {
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
-    r0 = (globals.yeah___25884 == 1);
+    r0 = (globals.yeah___28093 == 1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
     s.tmp_1 = game_over__P2703_mk(s);
     s.tmp_1.arg0 = false;
     s.tmp_1.arg1 = undefined;
-    s.callLocIdx = 151; s.pc = 3; return s.tmp_1;
+    s.callLocIdx = 152; s.pc = 3; return s.tmp_1;
   case 3:
     r0 = s.retval;
   case 1:
@@ -3261,12 +3267,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P25879.info = {"start":8373,"length":86,"line":194,"column":55,"endLine":198,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
+inline__P28088.info = {"start":8414,"length":86,"line":196,"column":55,"endLine":200,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
 
-function inline__P25879_mk(s) {
+function inline__P28088_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P25879, depth: s.depth + 1,
+        parent: s, fn: inline__P28088, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -3278,7 +3284,7 @@ function inline__P25879_mk(s) {
 
 
 
-function inline__P25966(s) {
+function inline__P28175(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3288,17 +3294,17 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.value___26016 = undefined;
-    s.unnamed202___U1 = undefined;
-    s.unnamed203___U2 = undefined;
-    s.value___26081 = undefined;
-    s.unnamed204___U4 = undefined;
-    s.unnamed205___U5 = undefined;
-    s.value___26092 = undefined;
-    s.unnamed206___U7 = undefined;
-    s.unnamed207___U8 = undefined;
+    s.value___28225 = undefined;
+    s.unnamed250___U1 = undefined;
+    s.unnamed251___U2 = undefined;
+    s.value___28290 = undefined;
+    s.unnamed252___U4 = undefined;
+    s.unnamed253___U5 = undefined;
+    s.value___28301 = undefined;
+    s.unnamed254___U7 = undefined;
+    s.unnamed255___U8 = undefined;
     s.tmp_2 = info_score__P2346_mk(s);
-    s.callLocIdx = 189; s.pc = 19; return s.tmp_2;
+    s.callLocIdx = 190; s.pc = 19; return s.tmp_2;
   case 19:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -3306,29 +3312,29 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
-    r0 = (globals.mad_baldi___25933 != 0);
+    r0 = (globals.mad_baldi___28142 != 0);
     s.tmp_3 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_3);
     if (!r0) { step = 1; continue; }
-    globals.mad_baldi___25933 = (0);
+    globals.mad_baldi___28142 = (0);
     s.tmp_0 = sprites_create__P2064_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex25976);
+    r0 = pxsim.image.ofBuffer(_hex28185);
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = globals.quarterr___25599;
-    s.callLocIdx = 190; s.pc = 20; return s.tmp_0;
+    s.tmp_0.arg1 = globals.quarterr___27806;
+    s.callLocIdx = 191; s.pc = 20; return s.tmp_0;
   case 20:
     r0 = s.retval;
-    globals.mySprite5___25891 = (r0);
+    globals.mySprite5___28100 = (r0);
     s.tmp_0 = tiles_placeOnTile__P2512_mk(s);
-    s.tmp_0.arg0 = globals.mySprite5___25891;
+    s.tmp_0.arg0 = globals.mySprite5___28100;
     s.tmp_1 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_1.arg0 = 3;
     s.tmp_1.arg1 = 16;
-    s.callLocIdx = 191; s.pc = 22; return s.tmp_1;
+    s.callLocIdx = 192; s.pc = 22; return s.tmp_1;
   case 22:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 192; s.pc = 21; return s.tmp_0;
+    s.callLocIdx = 193; s.pc = 21; return s.tmp_0;
   case 21:
     r0 = s.retval;
   case 1:
@@ -3336,7 +3342,7 @@ switch (step) {
   case 3:
   case 4:
     s.tmp_2 = info_score__P2346_mk(s);
-    s.callLocIdx = 193; s.pc = 23; return s.tmp_2;
+    s.callLocIdx = 194; s.pc = 23; return s.tmp_2;
   case 23:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -3344,235 +3350,235 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 9; continue; }
-    r0 = (globals.mad_baldi___25933 != 1);
+    r0 = (globals.mad_baldi___28142 != 1);
     s.tmp_3 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_3);
     if (!r0) { step = 7; continue; }
-    globals.yeah___25884 = (1);
-    globals.mad_baldi___25933 = (1);
+    globals.yeah___28093 = (1);
+    globals.mad_baldi___28142 = (1);
     r0 = pxsim_Array__mk();
     s.tmp_0 = r0;
-    r0 = pxsim.image.ofBuffer(_hex25992);
+    r0 = pxsim.image.ofBuffer(_hex28201);
     s.tmp_1 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_1);
-    r0 = pxsim.image.ofBuffer(_hex25994);
+    r0 = pxsim.image.ofBuffer(_hex28203);
     s.tmp_2 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_2);
-    r0 = pxsim.image.ofBuffer(_hex25996);
+    r0 = pxsim.image.ofBuffer(_hex28205);
     s.tmp_3 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_3);
-    r0 = pxsim.image.ofBuffer(_hex25998);
+    r0 = pxsim.image.ofBuffer(_hex28207);
     s.tmp_4 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_4);
-    r0 = pxsim.image.ofBuffer(_hex26000);
+    r0 = pxsim.image.ofBuffer(_hex28209);
     s.tmp_5 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_5);
-    r0 = pxsim.image.ofBuffer(_hex26002);
+    r0 = pxsim.image.ofBuffer(_hex28211);
     s.tmp_6 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_6);
-    r0 = pxsim.image.ofBuffer(_hex26004);
+    r0 = pxsim.image.ofBuffer(_hex28213);
     s.tmp_7 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_7);
-    r0 = pxsim.image.ofBuffer(_hex26006);
+    r0 = pxsim.image.ofBuffer(_hex28215);
     s.tmp_8 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_8);
-    r0 = pxsim.image.ofBuffer(_hex26008);
+    r0 = pxsim.image.ofBuffer(_hex28217);
     s.tmp_9 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_9);
-    r0 = pxsim.image.ofBuffer(_hex26010);
+    r0 = pxsim.image.ofBuffer(_hex28219);
     s.tmp_10 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_10);
-    r0 = pxsim.image.ofBuffer(_hex26012);
+    r0 = pxsim.image.ofBuffer(_hex28221);
     s.tmp_11 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_11);
-    r0 = pxsim.image.ofBuffer(_hex26014);
+    r0 = pxsim.image.ofBuffer(_hex28223);
     s.tmp_12 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_12);
     s.tmp_13 = animation_runImageAnimation__P3073_mk(s);
-    s.tmp_13.arg0 = globals.baldi___25936;
+    s.tmp_13.arg0 = globals.baldi___28145;
     s.tmp_13.arg1 = s.tmp_0;
     s.tmp_13.arg2 = 100;
     s.tmp_13.arg3 = true;
-    s.callLocIdx = 194; s.pc = 24; return s.tmp_13;
+    s.callLocIdx = 195; s.pc = 24; return s.tmp_13;
   case 24:
     r0 = s.retval;
-    s.value___26016 = (undefined);
+    s.value___28225 = (undefined);
     s.tmp_0 = tiles_getTilesByType__P2514_mk(s);
     s.tmp_1 = helpers_getTileByName__P3025_mk(s);
     s.tmp_1.arg0 = "myTile4";
-    s.callLocIdx = 195; s.pc = 26; return s.tmp_1;
+    s.callLocIdx = 196; s.pc = 26; return s.tmp_1;
   case 26:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 196; s.pc = 25; return s.tmp_0;
+    s.callLocIdx = 197; s.pc = 25; return s.tmp_0;
   case 25:
     r0 = s.retval;
-    s.unnamed202___U1 = (r0);
-    s.unnamed203___U2 = (0);
+    s.unnamed250___U1 = (r0);
+    s.unnamed251___U2 = (0);
   case 5:
-    s.tmp_0 = r0 = s.unnamed203___U2;
-    r0 = pxsim_Array__length(s.unnamed202___U1);
+    s.tmp_0 = r0 = s.unnamed251___U2;
+    r0 = pxsim_Array__length(s.unnamed250___U1);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 6; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed202___U1, s.unnamed203___U2);
-    s.value___26016 = (r0);
+    r0 = pxsim_Array__getAt(s.unnamed250___U1, s.unnamed251___U2);
+    s.value___28225 = (r0);
     s.tmp_2 = tiles_setWallAt__P2505_mk(s);
-    s.tmp_2.arg0 = s.value___26016;
+    s.tmp_2.arg0 = s.value___28225;
     s.tmp_2.arg1 = false;
-    s.callLocIdx = 197; s.pc = 27; return s.tmp_2;
+    s.callLocIdx = 198; s.pc = 27; return s.tmp_2;
   case 27:
     r0 = s.retval;
-    r0 = (s.unnamed203___U2 + 1);
-    s.unnamed203___U2 = (r0);
+    r0 = (s.unnamed251___U2 + 1);
+    s.unnamed251___U2 = (r0);
     { step = 5; continue; }
   case 6:
-    s.unnamed202___U1 = (undefined);
+    s.unnamed250___U1 = (undefined);
     s.tmp_0 = tiles_placeOnTile__P2512_mk(s);
-    s.tmp_0.arg0 = globals.baldi___25936;
+    s.tmp_0.arg0 = globals.baldi___28145;
     s.tmp_1 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_1.arg0 = 12;
     s.tmp_1.arg1 = 16;
-    s.callLocIdx = 198; s.pc = 29; return s.tmp_1;
+    s.callLocIdx = 199; s.pc = 29; return s.tmp_1;
   case 29:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 199; s.pc = 28; return s.tmp_0;
+    s.callLocIdx = 200; s.pc = 28; return s.tmp_0;
   case 28:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P2064_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex26029);
+    r0 = pxsim.image.ofBuffer(_hex28238);
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = globals.riunning___25608;
-    s.callLocIdx = 200; s.pc = 30; return s.tmp_0;
+    s.tmp_0.arg1 = globals.riunning___27815;
+    s.callLocIdx = 201; s.pc = 30; return s.tmp_0;
   case 30:
     r0 = s.retval;
-    globals.principle___25706 = (r0);
+    globals.principle___27915 = (r0);
     s.tmp_0 = tiles_placeOnTile__P2512_mk(s);
-    s.tmp_0.arg0 = globals.principle___25706;
+    s.tmp_0.arg0 = globals.principle___27915;
     s.tmp_1 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_1.arg0 = 12;
     s.tmp_1.arg1 = 16;
-    s.callLocIdx = 201; s.pc = 32; return s.tmp_1;
+    s.callLocIdx = 202; s.pc = 32; return s.tmp_1;
   case 32:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 202; s.pc = 31; return s.tmp_0;
+    s.callLocIdx = 203; s.pc = 31; return s.tmp_0;
   case 31:
     r0 = s.retval;
     s.tmp_0 = scene_aStar__P4234_mk(s);
     s.tmp_1 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_1.arg0 = globals.principle___25706;
-    s.callLocIdx = 203; s.pc = 34; return s.tmp_1;
+    s.tmp_1.arg0 = globals.principle___27915;
+    s.callLocIdx = 204; s.pc = 34; return s.tmp_1;
   case 34:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
     s.tmp_2 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_2.arg0 = globals.principle___25706;
-    s.callLocIdx = 204; s.pc = 35; return s.tmp_2;
+    s.tmp_2.arg0 = globals.principle___27915;
+    s.callLocIdx = 205; s.pc = 35; return s.tmp_2;
   case 35:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
     s.tmp_0.arg2 = null;
-    s.callLocIdx = 205; s.pc = 33; return s.tmp_0;
+    s.callLocIdx = 206; s.pc = 33; return s.tmp_0;
   case 33:
     r0 = s.retval;
-    globals.principal___25698 = (r0);
+    globals.principal___27907 = (r0);
     s.tmp_0 = scene_followPath__P4238_mk(s);
-    s.tmp_0.arg0 = globals.principle___25706;
-    s.tmp_0.arg1 = globals.principal___25698;
+    s.tmp_0.arg0 = globals.principle___27915;
+    s.tmp_0.arg1 = globals.principal___27907;
     s.tmp_0.arg2 = 50;
-    s.callLocIdx = 206; s.pc = 36; return s.tmp_0;
+    s.callLocIdx = 207; s.pc = 36; return s.tmp_0;
   case 36:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P2064_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex26046);
+    r0 = pxsim.image.ofBuffer(_hex28255);
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = globals.playyyy___25611;
-    s.callLocIdx = 207; s.pc = 37; return s.tmp_0;
+    s.tmp_0.arg1 = globals.playyyy___27818;
+    s.callLocIdx = 208; s.pc = 37; return s.tmp_0;
   case 37:
     r0 = s.retval;
-    globals.playtime___25757 = (r0);
+    globals.playtime___27966 = (r0);
     s.tmp_0 = tiles_placeOnTile__P2512_mk(s);
-    s.tmp_0.arg0 = globals.principle___25706;
+    s.tmp_0.arg0 = globals.principle___27915;
     s.tmp_1 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_1.arg0 = 12;
     s.tmp_1.arg1 = 16;
-    s.callLocIdx = 208; s.pc = 39; return s.tmp_1;
+    s.callLocIdx = 209; s.pc = 39; return s.tmp_1;
   case 39:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 209; s.pc = 38; return s.tmp_0;
+    s.callLocIdx = 210; s.pc = 38; return s.tmp_0;
   case 38:
     r0 = s.retval;
     s.tmp_0 = scene_aStar__P4234_mk(s);
     s.tmp_1 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_1.arg0 = globals.principle___25706;
-    s.callLocIdx = 210; s.pc = 41; return s.tmp_1;
+    s.tmp_1.arg0 = globals.principle___27915;
+    s.callLocIdx = 211; s.pc = 41; return s.tmp_1;
   case 41:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
     s.tmp_2 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_2.arg0 = globals.principle___25706;
-    s.callLocIdx = 211; s.pc = 42; return s.tmp_2;
+    s.tmp_2.arg0 = globals.principle___27915;
+    s.callLocIdx = 212; s.pc = 42; return s.tmp_2;
   case 42:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
     s.tmp_0.arg2 = null;
-    s.callLocIdx = 212; s.pc = 40; return s.tmp_0;
+    s.callLocIdx = 213; s.pc = 40; return s.tmp_0;
   case 40:
     r0 = s.retval;
-    globals.ppp___25749 = (r0);
+    globals.ppp___27958 = (r0);
     s.tmp_0 = scene_followPath__P4238_mk(s);
-    s.tmp_0.arg0 = globals.playtime___25757;
-    s.tmp_0.arg1 = globals.ppp___25749;
+    s.tmp_0.arg0 = globals.playtime___27966;
+    s.tmp_0.arg1 = globals.ppp___27958;
     s.tmp_0.arg2 = 50;
-    s.callLocIdx = 213; s.pc = 43; return s.tmp_0;
+    s.callLocIdx = 214; s.pc = 43; return s.tmp_0;
   case 43:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P2064_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex26063);
+    r0 = pxsim.image.ofBuffer(_hex28272);
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = globals.roebot___25614;
-    s.callLocIdx = 214; s.pc = 44; return s.tmp_0;
+    s.tmp_0.arg1 = globals.roebot___27821;
+    s.callLocIdx = 215; s.pc = 44; return s.tmp_0;
   case 44:
     r0 = s.retval;
-    globals.prize___25674 = (r0);
+    globals.prize___27881 = (r0);
     s.tmp_0 = tiles_placeOnTile__P2512_mk(s);
-    s.tmp_0.arg0 = globals.prize___25674;
+    s.tmp_0.arg0 = globals.prize___27881;
     s.tmp_1 = tiles_getTileLocation__P2506_mk(s);
     s.tmp_1.arg0 = 12;
     s.tmp_1.arg1 = 16;
-    s.callLocIdx = 215; s.pc = 46; return s.tmp_1;
+    s.callLocIdx = 216; s.pc = 46; return s.tmp_1;
   case 46:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 216; s.pc = 45; return s.tmp_0;
+    s.callLocIdx = 217; s.pc = 45; return s.tmp_0;
   case 45:
     r0 = s.retval;
     s.tmp_0 = scene_aStar__P4234_mk(s);
     s.tmp_1 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_1.arg0 = globals.principle___25706;
-    s.callLocIdx = 217; s.pc = 48; return s.tmp_1;
+    s.tmp_1.arg0 = globals.principle___27915;
+    s.callLocIdx = 218; s.pc = 48; return s.tmp_1;
   case 48:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
     s.tmp_2 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_2.arg0 = globals.principle___25706;
-    s.callLocIdx = 218; s.pc = 49; return s.tmp_2;
+    s.tmp_2.arg0 = globals.principle___27915;
+    s.callLocIdx = 219; s.pc = 49; return s.tmp_2;
   case 49:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
     s.tmp_0.arg2 = null;
-    s.callLocIdx = 219; s.pc = 47; return s.tmp_0;
+    s.callLocIdx = 220; s.pc = 47; return s.tmp_0;
   case 47:
     r0 = s.retval;
-    globals.prizeeroadcar___25867 = (r0);
+    globals.prizeeroadcar___28076 = (r0);
     s.tmp_0 = scene_followPath__P4238_mk(s);
-    s.tmp_0.arg0 = globals.prize___25674;
-    s.tmp_0.arg1 = globals.prizeeroadcar___25867;
+    s.tmp_0.arg0 = globals.prize___27881;
+    s.tmp_0.arg1 = globals.prizeeroadcar___28076;
     s.tmp_0.arg2 = 50;
-    s.callLocIdx = 220; s.pc = 50; return s.tmp_0;
+    s.callLocIdx = 221; s.pc = 50; return s.tmp_0;
   case 50:
     r0 = s.retval;
   case 7:
@@ -3580,7 +3586,7 @@ switch (step) {
   case 9:
   case 10:
     s.tmp_2 = info_score__P2346_mk(s);
-    s.callLocIdx = 221; s.pc = 51; return s.tmp_2;
+    s.callLocIdx = 222; s.pc = 51; return s.tmp_2;
   case 51:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -3588,42 +3594,42 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 13; continue; }
-    s.value___26081 = (undefined);
+    s.value___28290 = (undefined);
     s.tmp_0 = tiles_getTilesByType__P2514_mk(s);
     s.tmp_1 = helpers_getTileByName__P3025_mk(s);
     s.tmp_1.arg0 = "myTile5";
-    s.callLocIdx = 222; s.pc = 53; return s.tmp_1;
+    s.callLocIdx = 223; s.pc = 53; return s.tmp_1;
   case 53:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 223; s.pc = 52; return s.tmp_0;
+    s.callLocIdx = 224; s.pc = 52; return s.tmp_0;
   case 52:
     r0 = s.retval;
-    s.unnamed204___U4 = (r0);
-    s.unnamed205___U5 = (0);
+    s.unnamed252___U4 = (r0);
+    s.unnamed253___U5 = (0);
   case 11:
-    s.tmp_0 = r0 = s.unnamed205___U5;
-    r0 = pxsim_Array__length(s.unnamed204___U4);
+    s.tmp_0 = r0 = s.unnamed253___U5;
+    r0 = pxsim_Array__length(s.unnamed252___U4);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 12; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed204___U4, s.unnamed205___U5);
-    s.value___26081 = (r0);
+    r0 = pxsim_Array__getAt(s.unnamed252___U4, s.unnamed253___U5);
+    s.value___28290 = (r0);
     s.tmp_2 = tiles_setWallAt__P2505_mk(s);
-    s.tmp_2.arg0 = s.value___26081;
+    s.tmp_2.arg0 = s.value___28290;
     s.tmp_2.arg1 = false;
-    s.callLocIdx = 224; s.pc = 54; return s.tmp_2;
+    s.callLocIdx = 225; s.pc = 54; return s.tmp_2;
   case 54:
     r0 = s.retval;
-    r0 = (s.unnamed205___U5 + 1);
-    s.unnamed205___U5 = (r0);
+    r0 = (s.unnamed253___U5 + 1);
+    s.unnamed253___U5 = (r0);
     { step = 11; continue; }
   case 12:
-    s.unnamed204___U4 = (undefined);
+    s.unnamed252___U4 = (undefined);
   case 13:
   case 14:
     s.tmp_2 = info_score__P2346_mk(s);
-    s.callLocIdx = 225; s.pc = 55; return s.tmp_2;
+    s.callLocIdx = 226; s.pc = 55; return s.tmp_2;
   case 55:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -3631,50 +3637,50 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 17; continue; }
-    s.value___26092 = (undefined);
+    s.value___28301 = (undefined);
     s.tmp_0 = tiles_getTilesByType__P2514_mk(s);
     s.tmp_1 = helpers_getTileByName__P3025_mk(s);
     s.tmp_1.arg0 = "myTile19";
-    s.callLocIdx = 226; s.pc = 57; return s.tmp_1;
+    s.callLocIdx = 227; s.pc = 57; return s.tmp_1;
   case 57:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 227; s.pc = 56; return s.tmp_0;
+    s.callLocIdx = 228; s.pc = 56; return s.tmp_0;
   case 56:
     r0 = s.retval;
-    s.unnamed206___U7 = (r0);
-    s.unnamed207___U8 = (0);
+    s.unnamed254___U7 = (r0);
+    s.unnamed255___U8 = (0);
   case 15:
-    s.tmp_0 = r0 = s.unnamed207___U8;
-    r0 = pxsim_Array__length(s.unnamed206___U7);
+    s.tmp_0 = r0 = s.unnamed255___U8;
+    r0 = pxsim_Array__length(s.unnamed254___U7);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 16; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed206___U7, s.unnamed207___U8);
-    s.value___26092 = (r0);
+    r0 = pxsim_Array__getAt(s.unnamed254___U7, s.unnamed255___U8);
+    s.value___28301 = (r0);
     s.tmp_2 = tiles_setWallAt__P2505_mk(s);
-    s.tmp_2.arg0 = s.value___26092;
+    s.tmp_2.arg0 = s.value___28301;
     s.tmp_2.arg1 = false;
-    s.callLocIdx = 228; s.pc = 58; return s.tmp_2;
+    s.callLocIdx = 229; s.pc = 58; return s.tmp_2;
   case 58:
     r0 = s.retval;
-    r0 = (s.unnamed207___U8 + 1);
-    s.unnamed207___U8 = (r0);
+    r0 = (s.unnamed255___U8 + 1);
+    s.unnamed255___U8 = (r0);
     { step = 15; continue; }
   case 16:
-    s.unnamed206___U7 = (undefined);
+    s.unnamed254___U7 = (undefined);
   case 17:
   case 18:
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P25966.info = {"start":31272,"length":12602,"line":421,"column":8,"endLine":739,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P28175.info = {"start":31313,"length":12602,"line":423,"column":8,"endLine":741,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P25966_mk(s) {
+function inline__P28175_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P25966, depth: s.depth + 1,
+        parent: s, fn: inline__P28175, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -3690,38 +3696,38 @@ function inline__P25966_mk(s) {
   tmp_11: undefined,
   tmp_12: undefined,
   tmp_13: undefined,
-  value___26016: undefined,
-  unnamed202___U1: undefined,
-  unnamed203___U2: undefined,
-  value___26081: undefined,
-  unnamed204___U4: undefined,
-  unnamed205___U5: undefined,
-  value___26092: undefined,
-  unnamed206___U7: undefined,
-  unnamed207___U8: undefined,
+  value___28225: undefined,
+  unnamed250___U1: undefined,
+  unnamed251___U2: undefined,
+  value___28290: undefined,
+  unnamed252___U4: undefined,
+  unnamed253___U5: undefined,
+  value___28301: undefined,
+  unnamed254___U7: undefined,
+  unnamed255___U8: undefined,
 } }
 
-const _hex25976 = pxsim.BufferMethods.createBufferFromHex("870410001000000000b0bb0000000000b0bbbbbb00000000b0bbbbbb00000000bbbbbbbb0b000000bbbbbbbb0b000000bbbbbbbb0b000000b0bbbbbb00000000b0bbbbbb0000000000b0bb00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
-const _hex25992 = pxsim.BufferMethods.createBufferFromHex("87040b00100000000000000070d700000000007007000000000000070000000000dd0d7777778888d0dfd27777778888eeddd27777778800d0dfd2777777888800dd0d7777778888000000070000000000000070070000005055555555550000")
-const _hex25994 = pxsim.BufferMethods.createBufferFromHex("87040b00100000000000000070d700000000007007000000000000070000000000dd0d7777778888d0dfd27777778888eeddd277777788005055d2777777888800dd557777778888000000550000000000000070550000000000000000550000")
-const _hex25996 = pxsim.BufferMethods.createBufferFromHex("87040b00100000005000000070d700000005007007000000005000070000000000dd057777778888d0df527777778888eeddd27577778800d0dfd2577777888800dd0d7775778888000000075000000000000070070500000000000000500000")
-const _hex25998 = pxsim.BufferMethods.createBufferFromHex("87040b00100000000000000075d700000000007005000000000000075000000000dd0d7757778888d0dfd27757778888eeddd27777758800d0dfd2777775888800dd0d7777758888000000070050000000000070075000000000000070570000")
-const _hex26000 = pxsim.BufferMethods.createBufferFromHex("87040b00100000000000000050d700000000007057000000000000075000000000dd0d7777758888d0dfd27777758888eeddd27777758800d0dfd2777775888800dd0d7777578888000000070050000000000070075000000000000070570000")
-const _hex26002 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000000000705700000000007007500000000000070050000000dd0d7777578888d0dfd27777578888eeddd27777578800d0dfd2777757888800dd0d7777578888000000070050000000000070075000000000000070570000")
-const _hex26004 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000000000705700000000007007500000000000070050000000dd0d7777578888d0dfd27777578888eeddd27777578800d0dfd2777757888800dd0d7777578888000000070050000000000070075000000000000070570000")
-const _hex26006 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000000000705700000000007007500000000000070050000000dd0d7777578888d0dfd27777578888eeddd27777578800d0dfd2777757888800dd0d7777578888000000070050000000000070075000000000000070570000")
-const _hex26008 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000000000705700000000007007500000000000070050000000dd0d7777578888d0dfd27777578888eeddd27777578800d0dfd2777757888800dd0d7777578888000000070050000000000070075000000000000070570000")
-const _hex26010 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000000000705700000000007007500000000000070050000000dd0d7777578888d0dfd27777578888eeddd27777578800d0dfd2777757888800dd0d7777578888000000070050000000000070075000000000000070570000")
-const _hex26012 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000000000705700000000007007500000000000070050000000dd0d7777578888d0dfd27777578888eeddd27777578800d0dfd2777757888800dd0d7777578888000000070050000000000070075000000000000070570000")
-const _hex26014 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000000000705700000000007007500000000000070050000000dd0d7777578888d0dfd27777578888eeddd27777578800d0dfd2777757888800dd0d7777578888000000070050000000000070075000000000000070570000")
-const _hex26029 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000d0ff0f00000000000000f0000000000000000f00000000e0dd0dffffffccccdedfddffffffccccdedddfffffffcc00dedfddffffffcccce0dd0dffffffcccc0000000f00000000000000f00f00000000000000f0df0000")
-const _hex26046 = pxsim.BufferMethods.createBufferFromHex("87040f001000000000dd000000000000f0df0200e0ee0e00f020220000ee0e00ff002202228800000f00202222820000ffdd202222220800fffd2d2222220800dfdd2d2222228200fffd2d22222282eeffdd2d22222282eef00f2002000000ee00ff2022000000e000f00022020000000000ff20dd0000000000f0ffdf000000")
-const _hex26063 = pxsim.BufferMethods.createBufferFromHex("87040f0010000000000000000000f0ff0000dd0d0000f0ff0000dd0d0000f0ff0000dd9d999999090000909900099009d0dd090929020909fd2d0d0922920009dd2d0d09202902091d2d0d0992220009d0dd09092902090900009099000990090000dd9d999999090000dd0d0000f0ff0000dd0d0000f0ff000000000000f0ff")
+const _hex28185 = pxsim.BufferMethods.createBufferFromHex("870410001000000000b0bb0000000000b0bbbbbb00000000b0bbbbbb00000000bbbbbbbb0b000000bbbbbbbb0b000000bbbbbbbb0b000000b0bbbbbb00000000b0bbbbbb0000000000b0bb00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
+const _hex28201 = pxsim.BufferMethods.createBufferFromHex("87040b00100000000000000070d700000000007007000000000000070000000000dd0d7777778888d0dfd27777778888eeddd27777778800d0dfd2777777888800dd0d7777778888000000070000000000000070070000005055555555550000")
+const _hex28203 = pxsim.BufferMethods.createBufferFromHex("87040b00100000000000000070d700000000007007000000000000070000000000dd0d7777778888d0dfd27777778888eeddd277777788005055d2777777888800dd557777778888000000550000000000000070550000000000000000550000")
+const _hex28205 = pxsim.BufferMethods.createBufferFromHex("87040b00100000005000000070d700000005007007000000005000070000000000dd057777778888d0df527777778888eeddd27577778800d0dfd2577777888800dd0d7775778888000000075000000000000070070500000000000000500000")
+const _hex28207 = pxsim.BufferMethods.createBufferFromHex("87040b00100000000000000075d700000000007005000000000000075000000000dd0d7757778888d0dfd27757778888eeddd27777758800d0dfd2777775888800dd0d7777758888000000070050000000000070075000000000000070570000")
+const _hex28209 = pxsim.BufferMethods.createBufferFromHex("87040b00100000000000000050d700000000007057000000000000075000000000dd0d7777758888d0dfd27777758888eeddd27777758800d0dfd2777775888800dd0d7777578888000000070050000000000070075000000000000070570000")
+const _hex28211 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000000000705700000000007007500000000000070050000000dd0d7777578888d0dfd27777578888eeddd27777578800d0dfd2777757888800dd0d7777578888000000070050000000000070075000000000000070570000")
+const _hex28213 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000000000705700000000007007500000000000070050000000dd0d7777578888d0dfd27777578888eeddd27777578800d0dfd2777757888800dd0d7777578888000000070050000000000070075000000000000070570000")
+const _hex28215 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000000000705700000000007007500000000000070050000000dd0d7777578888d0dfd27777578888eeddd27777578800d0dfd2777757888800dd0d7777578888000000070050000000000070075000000000000070570000")
+const _hex28217 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000000000705700000000007007500000000000070050000000dd0d7777578888d0dfd27777578888eeddd27777578800d0dfd2777757888800dd0d7777578888000000070050000000000070075000000000000070570000")
+const _hex28219 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000000000705700000000007007500000000000070050000000dd0d7777578888d0dfd27777578888eeddd27777578800d0dfd2777757888800dd0d7777578888000000070050000000000070075000000000000070570000")
+const _hex28221 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000000000705700000000007007500000000000070050000000dd0d7777578888d0dfd27777578888eeddd27777578800d0dfd2777757888800dd0d7777578888000000070050000000000070075000000000000070570000")
+const _hex28223 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000000000705700000000007007500000000000070050000000dd0d7777578888d0dfd27777578888eeddd27777578800d0dfd2777757888800dd0d7777578888000000070050000000000070075000000000000070570000")
+const _hex28238 = pxsim.BufferMethods.createBufferFromHex("87040b001000000000d0ff0f00000000000000f0000000000000000f00000000e0dd0dffffffccccdedfddffffffccccdedddfffffffcc00dedfddffffffcccce0dd0dffffffcccc0000000f00000000000000f00f00000000000000f0df0000")
+const _hex28255 = pxsim.BufferMethods.createBufferFromHex("87040f001000000000dd000000000000f0df0200e0ee0e00f020220000ee0e00ff002202228800000f00202222820000ffdd202222220800fffd2d2222220800dfdd2d2222228200fffd2d22222282eeffdd2d22222282eef00f2002000000ee00ff2022000000e000f00022020000000000ff20dd0000000000f0ffdf000000")
+const _hex28272 = pxsim.BufferMethods.createBufferFromHex("87040f0010000000000000000000f0ff0000dd0d0000f0ff0000dd0d0000f0ff0000dd9d999999090000909900099009d0dd090929020909fd2d0d0922920009dd2d0d09202902091d2d0d0992220009d0dd09092902090900009099000990090000dd9d999999090000dd0d0000f0ff0000dd0d0000f0ff000000000000f0ff")
 
 
 
 
-function inline__P26100(s) {
+function inline__P28309(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3731,33 +3737,33 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    r0 = (globals.yeah___25884 == 1);
+    r0 = (globals.yeah___28093 == 1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
     s.tmp_1 = scene_aStar__P4234_mk(s);
     s.tmp_2 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_2.arg0 = globals.baldi___25936;
-    s.callLocIdx = 230; s.pc = 4; return s.tmp_2;
+    s.tmp_2.arg0 = globals.baldi___28145;
+    s.callLocIdx = 231; s.pc = 4; return s.tmp_2;
   case 4:
     r0 = s.retval;
     s.tmp_1.arg0 = r0;
     s.tmp_3 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_3.arg0 = globals.cameraplayer___25636;
-    s.callLocIdx = 231; s.pc = 5; return s.tmp_3;
+    s.tmp_3.arg0 = globals.cameraplayer___27843;
+    s.callLocIdx = 232; s.pc = 5; return s.tmp_3;
   case 5:
     r0 = s.retval;
     s.tmp_1.arg1 = r0;
     s.tmp_1.arg2 = null;
-    s.callLocIdx = 232; s.pc = 3; return s.tmp_1;
+    s.callLocIdx = 233; s.pc = 3; return s.tmp_1;
   case 3:
     r0 = s.retval;
-    globals.rev___25888 = (r0);
+    globals.rev___28097 = (r0);
     s.tmp_0 = scene_followPath__P4238_mk(s);
-    s.tmp_0.arg0 = globals.baldi___25936;
-    s.tmp_0.arg1 = globals.rev___25888;
+    s.tmp_0.arg0 = globals.baldi___28145;
+    s.tmp_0.arg1 = globals.rev___28097;
     s.tmp_3 = info_score__P2346_mk(s);
-    s.callLocIdx = 233; s.pc = 7; return s.tmp_3;
+    s.callLocIdx = 234; s.pc = 7; return s.tmp_3;
   case 7:
     r0 = s.retval;
     s.tmp_2 = r0;
@@ -3765,12 +3771,12 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = (s.tmp_1 * 10);
     s.tmp_0.arg2 = r0;
-    s.callLocIdx = 234; s.pc = 6; return s.tmp_0;
+    s.callLocIdx = 235; s.pc = 6; return s.tmp_0;
   case 6:
     r0 = s.retval;
     s.tmp_0 = pause__P413_mk(s);
     s.tmp_0.arg0 = 5000;
-    s.callLocIdx = 235; s.pc = 8; return s.tmp_0;
+    s.callLocIdx = 236; s.pc = 8; return s.tmp_0;
   case 8:
     r0 = s.retval;
   case 1:
@@ -3779,12 +3785,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P26100.info = {"start":43884,"length":207,"line":740,"column":8,"endLine":746,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P28309.info = {"start":43925,"length":207,"line":742,"column":8,"endLine":748,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P26100_mk(s) {
+function inline__P28309_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P26100, depth: s.depth + 1,
+        parent: s, fn: inline__P28309, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -10951,7 +10957,7 @@ function scene_GameForeverHandler_constructor__P2560_mk(s) {
 
 
 
-function Loaditems__P25760(s) {
+function Loaditems__P27969(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -10962,273 +10968,273 @@ switch (step) {
   case 0:
 
     s.tmp_0 = sprites_create__P2064_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex25766);
+    r0 = pxsim.image.ofBuffer(_hex27975);
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = globals.Notebook___25596;
-    s.callLocIdx = 106; s.pc = 1; return s.tmp_0;
+    s.tmp_0.arg1 = globals.Notebook___27803;
+    s.callLocIdx = 107; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
-    globals.mySprite2___25762 = (r0);
+    globals.mySprite2___27971 = (r0);
     s.tmp_0 = tiles_placeOnRandomTile__P2513_mk(s);
-    s.tmp_0.arg0 = globals.mySprite2___25762;
+    s.tmp_0.arg0 = globals.mySprite2___27971;
     s.tmp_1 = helpers_getTileByName__P3025_mk(s);
     s.tmp_1.arg0 = "myTile1";
-    s.callLocIdx = 107; s.pc = 3; return s.tmp_1;
+    s.callLocIdx = 108; s.pc = 3; return s.tmp_1;
   case 3:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 108; s.pc = 2; return s.tmp_0;
+    s.callLocIdx = 109; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
     s.tmp_0 = tiles_setTileAt__P2504_mk(s);
     s.tmp_1 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_1.arg0 = globals.mySprite2___25762;
-    s.callLocIdx = 109; s.pc = 5; return s.tmp_1;
+    s.tmp_1.arg0 = globals.mySprite2___27971;
+    s.callLocIdx = 110; s.pc = 5; return s.tmp_1;
   case 5:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
     s.tmp_2 = helpers_getTileByName__P3025_mk(s);
     s.tmp_2.arg0 = "transparency16";
-    s.callLocIdx = 110; s.pc = 6; return s.tmp_2;
+    s.callLocIdx = 111; s.pc = 6; return s.tmp_2;
   case 6:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 111; s.pc = 4; return s.tmp_0;
+    s.callLocIdx = 112; s.pc = 4; return s.tmp_0;
   case 4:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P2064_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex25780);
+    r0 = pxsim.image.ofBuffer(_hex27989);
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = globals.Notebook___25596;
-    s.callLocIdx = 112; s.pc = 7; return s.tmp_0;
+    s.tmp_0.arg1 = globals.Notebook___27803;
+    s.callLocIdx = 113; s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
-    globals.mySprite2___25762 = (r0);
+    globals.mySprite2___27971 = (r0);
     s.tmp_0 = tiles_placeOnRandomTile__P2513_mk(s);
-    s.tmp_0.arg0 = globals.mySprite2___25762;
+    s.tmp_0.arg0 = globals.mySprite2___27971;
     s.tmp_1 = helpers_getTileByName__P3025_mk(s);
     s.tmp_1.arg0 = "myTile2";
-    s.callLocIdx = 113; s.pc = 9; return s.tmp_1;
+    s.callLocIdx = 114; s.pc = 9; return s.tmp_1;
   case 9:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 114; s.pc = 8; return s.tmp_0;
+    s.callLocIdx = 115; s.pc = 8; return s.tmp_0;
   case 8:
     r0 = s.retval;
     s.tmp_0 = tiles_setTileAt__P2504_mk(s);
     s.tmp_1 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_1.arg0 = globals.mySprite2___25762;
-    s.callLocIdx = 115; s.pc = 11; return s.tmp_1;
+    s.tmp_1.arg0 = globals.mySprite2___27971;
+    s.callLocIdx = 116; s.pc = 11; return s.tmp_1;
   case 11:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
     s.tmp_2 = helpers_getTileByName__P3025_mk(s);
     s.tmp_2.arg0 = "transparency16";
-    s.callLocIdx = 116; s.pc = 12; return s.tmp_2;
+    s.callLocIdx = 117; s.pc = 12; return s.tmp_2;
   case 12:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 117; s.pc = 10; return s.tmp_0;
+    s.callLocIdx = 118; s.pc = 10; return s.tmp_0;
   case 10:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P2064_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex25794);
+    r0 = pxsim.image.ofBuffer(_hex28003);
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = globals.Notebook___25596;
-    s.callLocIdx = 118; s.pc = 13; return s.tmp_0;
+    s.tmp_0.arg1 = globals.Notebook___27803;
+    s.callLocIdx = 119; s.pc = 13; return s.tmp_0;
   case 13:
     r0 = s.retval;
-    globals.mySprite2___25762 = (r0);
+    globals.mySprite2___27971 = (r0);
     s.tmp_0 = tiles_placeOnRandomTile__P2513_mk(s);
-    s.tmp_0.arg0 = globals.mySprite2___25762;
+    s.tmp_0.arg0 = globals.mySprite2___27971;
     s.tmp_1 = helpers_getTileByName__P3025_mk(s);
     s.tmp_1.arg0 = "myTile8";
-    s.callLocIdx = 119; s.pc = 15; return s.tmp_1;
+    s.callLocIdx = 120; s.pc = 15; return s.tmp_1;
   case 15:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 120; s.pc = 14; return s.tmp_0;
+    s.callLocIdx = 121; s.pc = 14; return s.tmp_0;
   case 14:
     r0 = s.retval;
     s.tmp_0 = tiles_setTileAt__P2504_mk(s);
     s.tmp_1 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_1.arg0 = globals.mySprite2___25762;
-    s.callLocIdx = 121; s.pc = 17; return s.tmp_1;
+    s.tmp_1.arg0 = globals.mySprite2___27971;
+    s.callLocIdx = 122; s.pc = 17; return s.tmp_1;
   case 17:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
     s.tmp_2 = helpers_getTileByName__P3025_mk(s);
     s.tmp_2.arg0 = "transparency16";
-    s.callLocIdx = 122; s.pc = 18; return s.tmp_2;
+    s.callLocIdx = 123; s.pc = 18; return s.tmp_2;
   case 18:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 123; s.pc = 16; return s.tmp_0;
+    s.callLocIdx = 124; s.pc = 16; return s.tmp_0;
   case 16:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P2064_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex25808);
+    r0 = pxsim.image.ofBuffer(_hex28017);
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = globals.Notebook___25596;
-    s.callLocIdx = 124; s.pc = 19; return s.tmp_0;
+    s.tmp_0.arg1 = globals.Notebook___27803;
+    s.callLocIdx = 125; s.pc = 19; return s.tmp_0;
   case 19:
     r0 = s.retval;
-    globals.mySprite2___25762 = (r0);
+    globals.mySprite2___27971 = (r0);
     s.tmp_0 = tiles_placeOnRandomTile__P2513_mk(s);
-    s.tmp_0.arg0 = globals.mySprite2___25762;
+    s.tmp_0.arg0 = globals.mySprite2___27971;
     s.tmp_1 = helpers_getTileByName__P3025_mk(s);
     s.tmp_1.arg0 = "myTile6";
-    s.callLocIdx = 125; s.pc = 21; return s.tmp_1;
+    s.callLocIdx = 126; s.pc = 21; return s.tmp_1;
   case 21:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 126; s.pc = 20; return s.tmp_0;
+    s.callLocIdx = 127; s.pc = 20; return s.tmp_0;
   case 20:
     r0 = s.retval;
     s.tmp_0 = tiles_setTileAt__P2504_mk(s);
     s.tmp_1 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_1.arg0 = globals.mySprite2___25762;
-    s.callLocIdx = 127; s.pc = 23; return s.tmp_1;
+    s.tmp_1.arg0 = globals.mySprite2___27971;
+    s.callLocIdx = 128; s.pc = 23; return s.tmp_1;
   case 23:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
     s.tmp_2 = helpers_getTileByName__P3025_mk(s);
     s.tmp_2.arg0 = "transparency16";
-    s.callLocIdx = 128; s.pc = 24; return s.tmp_2;
+    s.callLocIdx = 129; s.pc = 24; return s.tmp_2;
   case 24:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 129; s.pc = 22; return s.tmp_0;
+    s.callLocIdx = 130; s.pc = 22; return s.tmp_0;
   case 22:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P2064_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex25822);
+    r0 = pxsim.image.ofBuffer(_hex28031);
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = globals.Notebook___25596;
-    s.callLocIdx = 130; s.pc = 25; return s.tmp_0;
+    s.tmp_0.arg1 = globals.Notebook___27803;
+    s.callLocIdx = 131; s.pc = 25; return s.tmp_0;
   case 25:
     r0 = s.retval;
-    globals.mySprite2___25762 = (r0);
+    globals.mySprite2___27971 = (r0);
     s.tmp_0 = tiles_placeOnRandomTile__P2513_mk(s);
-    s.tmp_0.arg0 = globals.mySprite2___25762;
+    s.tmp_0.arg0 = globals.mySprite2___27971;
     s.tmp_1 = helpers_getTileByName__P3025_mk(s);
     s.tmp_1.arg0 = "myTile9";
-    s.callLocIdx = 131; s.pc = 27; return s.tmp_1;
+    s.callLocIdx = 132; s.pc = 27; return s.tmp_1;
   case 27:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 132; s.pc = 26; return s.tmp_0;
+    s.callLocIdx = 133; s.pc = 26; return s.tmp_0;
   case 26:
     r0 = s.retval;
     s.tmp_0 = tiles_setTileAt__P2504_mk(s);
     s.tmp_1 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_1.arg0 = globals.mySprite2___25762;
-    s.callLocIdx = 133; s.pc = 29; return s.tmp_1;
+    s.tmp_1.arg0 = globals.mySprite2___27971;
+    s.callLocIdx = 134; s.pc = 29; return s.tmp_1;
   case 29:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
     s.tmp_2 = helpers_getTileByName__P3025_mk(s);
     s.tmp_2.arg0 = "transparency16";
-    s.callLocIdx = 134; s.pc = 30; return s.tmp_2;
+    s.callLocIdx = 135; s.pc = 30; return s.tmp_2;
   case 30:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 135; s.pc = 28; return s.tmp_0;
+    s.callLocIdx = 136; s.pc = 28; return s.tmp_0;
   case 28:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P2064_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex25836);
+    r0 = pxsim.image.ofBuffer(_hex28045);
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = globals.Notebook___25596;
-    s.callLocIdx = 136; s.pc = 31; return s.tmp_0;
+    s.tmp_0.arg1 = globals.Notebook___27803;
+    s.callLocIdx = 137; s.pc = 31; return s.tmp_0;
   case 31:
     r0 = s.retval;
-    globals.mySprite2___25762 = (r0);
+    globals.mySprite2___27971 = (r0);
     s.tmp_0 = tiles_placeOnRandomTile__P2513_mk(s);
-    s.tmp_0.arg0 = globals.mySprite2___25762;
+    s.tmp_0.arg0 = globals.mySprite2___27971;
     s.tmp_1 = helpers_getTileByName__P3025_mk(s);
     s.tmp_1.arg0 = "myTile7";
-    s.callLocIdx = 137; s.pc = 33; return s.tmp_1;
+    s.callLocIdx = 138; s.pc = 33; return s.tmp_1;
   case 33:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 138; s.pc = 32; return s.tmp_0;
+    s.callLocIdx = 139; s.pc = 32; return s.tmp_0;
   case 32:
     r0 = s.retval;
     s.tmp_0 = tiles_setTileAt__P2504_mk(s);
     s.tmp_1 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_1.arg0 = globals.mySprite2___25762;
-    s.callLocIdx = 139; s.pc = 35; return s.tmp_1;
+    s.tmp_1.arg0 = globals.mySprite2___27971;
+    s.callLocIdx = 140; s.pc = 35; return s.tmp_1;
   case 35:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
     s.tmp_2 = helpers_getTileByName__P3025_mk(s);
     s.tmp_2.arg0 = "transparency16";
-    s.callLocIdx = 140; s.pc = 36; return s.tmp_2;
+    s.callLocIdx = 141; s.pc = 36; return s.tmp_2;
   case 36:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 141; s.pc = 34; return s.tmp_0;
+    s.callLocIdx = 142; s.pc = 34; return s.tmp_0;
   case 34:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P2064_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex25850);
+    r0 = pxsim.image.ofBuffer(_hex28059);
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = globals.Notebook___25596;
-    s.callLocIdx = 142; s.pc = 37; return s.tmp_0;
+    s.tmp_0.arg1 = globals.Notebook___27803;
+    s.callLocIdx = 143; s.pc = 37; return s.tmp_0;
   case 37:
     r0 = s.retval;
-    globals.mySprite2___25762 = (r0);
+    globals.mySprite2___27971 = (r0);
     s.tmp_0 = tiles_placeOnRandomTile__P2513_mk(s);
-    s.tmp_0.arg0 = globals.mySprite2___25762;
+    s.tmp_0.arg0 = globals.mySprite2___27971;
     s.tmp_1 = helpers_getTileByName__P3025_mk(s);
     s.tmp_1.arg0 = "myTile3";
-    s.callLocIdx = 143; s.pc = 39; return s.tmp_1;
+    s.callLocIdx = 144; s.pc = 39; return s.tmp_1;
   case 39:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 144; s.pc = 38; return s.tmp_0;
+    s.callLocIdx = 145; s.pc = 38; return s.tmp_0;
   case 38:
     r0 = s.retval;
     s.tmp_0 = tiles_setTileAt__P2504_mk(s);
     s.tmp_1 = Sprite_tilemapLocation__P2211_mk(s);
-    s.tmp_1.arg0 = globals.mySprite2___25762;
-    s.callLocIdx = 145; s.pc = 41; return s.tmp_1;
+    s.tmp_1.arg0 = globals.mySprite2___27971;
+    s.callLocIdx = 146; s.pc = 41; return s.tmp_1;
   case 41:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
     s.tmp_2 = helpers_getTileByName__P3025_mk(s);
     s.tmp_2.arg0 = "transparency16";
-    s.callLocIdx = 146; s.pc = 42; return s.tmp_2;
+    s.callLocIdx = 147; s.pc = 42; return s.tmp_2;
   case 42:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 147; s.pc = 40; return s.tmp_0;
+    s.callLocIdx = 148; s.pc = 40; return s.tmp_0;
   case 40:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-Loaditems__P25760.info = {"start":2069,"length":6066,"line":48,"column":0,"endLine":189,"endColumn":1,"fileName":"main.ts","functionName":"Loaditems","argumentNames":[]}
+Loaditems__P27969.info = {"start":2110,"length":6066,"line":50,"column":0,"endLine":191,"endColumn":1,"fileName":"main.ts","functionName":"Loaditems","argumentNames":[]}
 
-function Loaditems__P25760_mk(s) {
+function Loaditems__P27969_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Loaditems__P25760, depth: s.depth + 1,
+        parent: s, fn: Loaditems__P27969, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
 } }
 
-const _hex25766 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000000000000000000e00e000000000000e0eeeeee22222202e0eeeeee22222202e00e000022222202e00e000022222202e00e000022222202e00e000022222202e0eeeeee00000000e0eeeeee00000000e00e0000000000000000000000000000000000000000000000000000")
-const _hex25780 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000000000000000000e00e000000000000e0eeeeee88888808e0eeeeee88888808e00e000088888808e00e000088888808e00e000088888808e00e000088888808e0eeeeee00000000e0eeeeee00000000e00e0000000000000000000000000000000000000000000000000000")
-const _hex25794 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000000000000000000e00e000000000000e0eeeeee11111101e0eeeeee11111101e00e000011111101e00e000011111101e00e000011111101e00e000011111101e0eeeeee00000000e0eeeeee00000000e00e0000000000000000000000000000000000000000000000000000")
-const _hex25808 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000000000000000000e00e000000000000e0eeeeeeffffff0fe0eeeeeeffffff0fe00e0000ffffff0fe00e0000ffffff0fe00e0000ffffff0fe00e0000ffffff0fe0eeeeee00000000e0eeeeee00000000e00e0000000000000000000000000000000000000000000000000000")
-const _hex25822 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000000000000000000e00e000000000000e0eeeeee33333303e0eeeeee33333303e00e000033333303e00e000033333303e00e000033333303e00e000033333303e0eeeeee00000000e0eeeeee00000000e00e0000000000000000000000000000000000000000000000000000")
-const _hex25836 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000000000000000000e00e000000000000e0eeeeee99999909e0eeeeee99999909e00e000099999909e00e000099999909e00e000099999909e00e000099999909e0eeeeee00000000e0eeeeee00000000e00e0000000000000000000000000000000000000000000000000000")
-const _hex25850 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000000000000000000e00e000000000000e0eeeeee55555505e0eeeeee55555505e00e000055555505e00e000055555505e00e000055555505e00e000055555505e0eeeeee00000000e0eeeeee00000000e00e0000000000000000000000000000000000000000000000000000")
+const _hex27975 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000000000000000000e00e000000000000e0eeeeee22222202e0eeeeee22222202e00e000022222202e00e000022222202e00e000022222202e00e000022222202e0eeeeee00000000e0eeeeee00000000e00e0000000000000000000000000000000000000000000000000000")
+const _hex27989 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000000000000000000e00e000000000000e0eeeeee88888808e0eeeeee88888808e00e000088888808e00e000088888808e00e000088888808e00e000088888808e0eeeeee00000000e0eeeeee00000000e00e0000000000000000000000000000000000000000000000000000")
+const _hex28003 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000000000000000000e00e000000000000e0eeeeee11111101e0eeeeee11111101e00e000011111101e00e000011111101e00e000011111101e00e000011111101e0eeeeee00000000e0eeeeee00000000e00e0000000000000000000000000000000000000000000000000000")
+const _hex28017 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000000000000000000e00e000000000000e0eeeeeeffffff0fe0eeeeeeffffff0fe00e0000ffffff0fe00e0000ffffff0fe00e0000ffffff0fe00e0000ffffff0fe0eeeeee00000000e0eeeeee00000000e00e0000000000000000000000000000000000000000000000000000")
+const _hex28031 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000000000000000000e00e000000000000e0eeeeee33333303e0eeeeee33333303e00e000033333303e00e000033333303e00e000033333303e00e000033333303e0eeeeee00000000e0eeeeee00000000e00e0000000000000000000000000000000000000000000000000000")
+const _hex28045 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000000000000000000e00e000000000000e0eeeeee99999909e0eeeeee99999909e00e000099999909e00e000099999909e00e000099999909e00e000099999909e0eeeeee00000000e0eeeeee00000000e00e0000000000000000000000000000000000000000000000000000")
+const _hex28059 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000000000000000000e00e000000000000e0eeeeee55555505e0eeeeee55555505e00e000055555505e00e000055555505e00e000055555505e00e000055555505e0eeeeee00000000e0eeeeee00000000e00e0000000000000000000000000000000000000000000000000000")
 
 
 
@@ -66540,7 +66546,7 @@ const animation_PathNode__C3039_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["transparency16___4369","tile2___4370","tile1___4371","tile4___4373","tile5___4374","tile3___4372","tile7___4375","tile8___4376","tile6___4377","tile9___4378","tile10___4379","tile11___4380","tile12___4381","tile13___4382","tile14___4383","tile15___4384","tile16___4385","tile18___4387","tile19___4388","tile20___4389","tile21___4390","tile22___4391","tile17___4386","Notebook___25596","quarterr___25599","scissorss___25602","soda___25605","riunning___25608","playyyy___25611","roebot___25614","cameraplayer___25636","prize_push_period___25653","list___25665","prize___25674","principal___25698","principle___25706","ppp___25749","playtime___25757","prizeeroadcar___25867","yeah___25884","baldi___25936","mad_baldi___25933","mySprite5___25891","rev___25888","mySprite2___25762"])
+const breakpoints = setupDebugger(1, ["transparency16___4369","tile2___4370","tile1___4371","tile4___4373","tile5___4374","tile3___4372","tile7___4375","tile8___4376","tile6___4377","tile9___4378","tile10___4379","tile11___4380","tile12___4381","tile13___4382","tile14___4383","tile15___4384","tile16___4385","tile18___4387","tile19___4388","tile20___4389","tile21___4390","tile22___4391","tile17___4386","Notebook___27803","quarterr___27806","scissorss___27809","soda___27812","riunning___27815","playyyy___27818","roebot___27821","cameraplayer___27843","prize_push_period___27860","list___27872","prize___27881","principal___27907","principle___27915","ppp___27958","playtime___27966","prizeeroadcar___28076","yeah___28093","baldi___28145","mad_baldi___28142","mySprite5___28100","rev___28097","mySprite2___27971"])
 
-return _main___P26166
+return _main___P28344
 })
