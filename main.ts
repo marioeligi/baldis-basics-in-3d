@@ -22,6 +22,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.roebot, function (sprite, otherS
         prize_push_period = 0
         while (!(list.indexOf(cameraplayer.tilemapLocation()) != -1)) {
             tiles.placeOnTile(cameraplayer, prize.tilemapLocation())
+            pause(200)
         }
     }
 })
