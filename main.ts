@@ -22,9 +22,11 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.roebot, function (sprite, otherS
         prize_push_period = 0
         while (!(list.indexOf(cameraplayer.tilemapLocation()) != -1)) {
             tiles.placeOnTile(cameraplayer, prize.tilemapLocation())
-            pause(200)
+            pause(500)
         }
     }
+    pause(500)
+    prize_push_period = 1
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     Render.setViewAngle(0 - Render.getAttribute(Render.attribute.dirX), 0 - Render.getAttribute(Render.attribute.dirY))
