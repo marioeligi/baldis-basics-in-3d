@@ -20,12 +20,13 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile19`, function (sprite, 
 sprites.onOverlap(SpriteKind.Player, SpriteKind.roebot, function (sprite, otherSprite) {
     if (prize_push_period == 1) {
         prize_push_period = 0
-        while (!(list.indexOf(cameraplayer.tilemapLocation()) != -1)) {
+        while (list.indexOf(prize.tilemapLocation()) == -1) {
             tiles.placeOnTile(cameraplayer, prize.tilemapLocation())
-            pause(500)
+            pause(100)
+            music.baDing.play()
         }
     }
-    pause(500)
+    pause(2000)
     prize_push_period = 1
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -34,6 +35,14 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 scene.onPathCompletion(SpriteKind.riunning, function (sprite, location) {
     principal = scene.aStar(location, list[randint(0, 18)])
     scene.followPath(principle, principal)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.playyyy, function (sprite, otherSprite) {
+    Render.moveWithController(0)
+    for (let index = 0; index < 5; index++) {
+        Render.jumpWithHeightAndDuration(cameraplayer, 4, 1000)
+        pause(1000)
+    }
+    Render.moveWithController(2)
 })
 controller.A.onEvent(ControllerButtonEvent.Released, function () {
     Render.setViewAngle(0 - Render.getAttribute(Render.attribute.dirX), 0 - Render.getAttribute(Render.attribute.dirY))
@@ -200,7 +209,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     }
 })
 let rev: tiles.Location[] = []
-let mySprite5: Sprite = null
+let bully: Sprite = null
 let yeah = 0
 let prizeeroadcar: tiles.Location[] = []
 let mySprite2: Sprite = null
@@ -422,28 +431,43 @@ Render.setZOffset(cameraplayer, 1)
 tiles.placeOnTile(baldi, tiles.getTileLocation(2, 16))
 Loaditems()
 forever(function () {
+    music.playTone(247, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Whole))
+    music.playTone(247, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(262, music.beat(BeatFraction.Half))
+    music.playTone(277, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Triplet))
+    music.playTone(294, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Double))
+    music.playTone(392, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(349, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(294, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(330, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(262, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(294, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Breve))
+    music.setVolume(100)
+    if (false) {
+        music.playTone(196, music.beat(BeatFraction.Whole))
+        music.rest(music.beat(BeatFraction.Half))
+        music.playTone(196, music.beat(BeatFraction.Whole))
+        music.playTone(196, music.beat(BeatFraction.Half))
+        music.playTone(220, music.beat(BeatFraction.Whole))
+        music.rest(music.beat(BeatFraction.Quarter))
+        music.playTone(233, music.beat(BeatFraction.Whole))
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+})
+forever(function () {
     if (info.score() == 1) {
         if (mad_baldi != 0) {
             mad_baldi = 0
-            mySprite5 = sprites.create(img`
-                . . . b b b . . . . . . . . . . 
-                . b b b b b b b . . . . . . . . 
-                . b b b b b b b . . . . . . . . 
-                b b b b b b b b b . . . . . . . 
-                b b b b b b b b b . . . . . . . 
-                b b b b b b b b b . . . . . . . 
-                . b b b b b b b . . . . . . . . 
-                . b b b b b b b . . . . . . . . 
-                . . . b b b . . . . . . . . . . 
-                . . . . . . . . . . . . . . . . 
-                . . . . . . . . . . . . . . . . 
-                . . . . . . . . . . . . . . . . 
-                . . . . . . . . . . . . . . . . 
-                . . . . . . . . . . . . . . . . 
-                . . . . . . . . . . . . . . . . 
-                . . . . . . . . . . . . . . . . 
-                `, SpriteKind.quarterr)
-            tiles.placeOnTile(mySprite5, tiles.getTileLocation(3, 16))
         }
     }
     if (info.score() == 2) {
@@ -727,6 +751,26 @@ forever(function () {
             tiles.placeOnTile(prize, tiles.getTileLocation(12, 16))
             prizeeroadcar = scene.aStar(principle.tilemapLocation(), principle.tilemapLocation())
             scene.followPath(prize, prizeeroadcar, 50)
+            bully = sprites.create(img`
+                . . . . . . e e e e . . . . . . 
+                . . . . . . f d f d . . . . . . 
+                . . . . . . d d d d . . . . . . 
+                . . . . . . d f d d . . . . 8 . 
+                . . . . . 4 4 d d d 4 4 . . 8 . 
+                . . . . 4 4 4 4 4 4 4 4 4 . 8 . 
+                . . . 8 4 4 4 4 4 4 4 4 4 8 8 . 
+                . . 8 8 4 4 4 4 4 4 4 4 4 . . . 
+                . 8 8 . 4 4 4 4 4 4 4 4 4 . . . 
+                . 8 . . 4 4 4 4 4 4 4 4 4 . . . 
+                . . . . 4 4 4 4 4 4 4 4 4 . . . 
+                . . . . 4 4 4 4 4 4 4 4 4 . . . 
+                . . . . . 4 4 4 4 4 4 4 . . . . 
+                . . . . . 8 . . . . . 8 . . . . 
+                . . . . . 8 . . . . . 8 . . . . 
+                . . . . . . . . . . . 8 . . . . 
+                `, SpriteKind.Player)
+            tiles.placeOnTile(bully, list[randint(0, 18)])
+            tiles.setWallAt(bully.tilemapLocation(), true)
         }
     }
     if (info.score() == 10) {
