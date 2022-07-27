@@ -18,16 +18,18 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile19`, function (sprite, 
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.roebot, function (sprite, otherSprite) {
-    if (prize_push_period == 1) {
-        prize_push_period = 0
-        while (list.indexOf(prize.tilemapLocation()) == -1) {
-            tiles.placeOnTile(cameraplayer, prize.tilemapLocation())
-            pause(100)
-            music.baDing.play()
+    if (false) {
+        if (prize_push_period == 1) {
+            prize_push_period = 0
+            while (list.indexOf(prize.tilemapLocation()) == -1) {
+                tiles.placeOnTile(cameraplayer, prize.tilemapLocation())
+                pause(100)
+                music.baDing.play()
+            }
         }
+        pause(2000)
+        prize_push_period = 1
     }
-    pause(2000)
-    prize_push_period = 1
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     Render.setViewAngle(0 - Render.getAttribute(Render.attribute.dirX), 0 - Render.getAttribute(Render.attribute.dirY))
@@ -221,6 +223,7 @@ let playtime: Sprite = null
 let principle: Sprite = null
 let list: tiles.Location[] = []
 let prize_push_period = 0
+let playjin = 0
 scene.setBackgroundImage(img`
     9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
     9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
@@ -422,7 +425,6 @@ playtime = sprites.create(img`
     . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . 
     `, SpriteKind.playyyy)
-playtime.destroy()
 cameraplayer = Render.getRenderSpriteVariable()
 Render.setViewMode(ViewMode.raycastingView)
 tiles.placeOnTile(cameraplayer, tiles.getTileLocation(1, 16))
@@ -430,51 +432,47 @@ Render.moveWithController(2, 4)
 Render.setZOffset(cameraplayer, 1)
 tiles.placeOnTile(baldi, tiles.getTileLocation(2, 16))
 Loaditems()
+story.setSoundEnabled(false)
+story.spriteSayText(baldi, "<Baldi> Oh, hi! Welcome to my school house!")
+game.onUpdate(function () {
+	
+})
 forever(function () {
-    music.playTone(247, music.beat(BeatFraction.Whole))
-    music.rest(music.beat(BeatFraction.Whole))
-    music.playTone(247, music.beat(BeatFraction.Half))
-    music.rest(music.beat(BeatFraction.Triplet))
-    music.playTone(262, music.beat(BeatFraction.Half))
-    music.playTone(277, music.beat(BeatFraction.Half))
-    music.rest(music.beat(BeatFraction.Triplet))
+    music.setVolume(1000 - spriteutils.distanceBetween(cameraplayer, playtime))
+    music.playTone(349, music.beat(BeatFraction.Double))
     music.playTone(294, music.beat(BeatFraction.Whole))
-    music.rest(music.beat(BeatFraction.Double))
-    music.playTone(392, music.beat(BeatFraction.Half))
-    music.rest(music.beat(BeatFraction.Half))
-    music.playTone(349, music.beat(BeatFraction.Half))
+    music.playTone(392, music.beat(BeatFraction.Whole))
+    music.playTone(349, music.beat(BeatFraction.Double))
+    music.playTone(294, music.beat(BeatFraction.Whole))
     music.rest(music.beat(BeatFraction.Half))
     music.playTone(294, music.beat(BeatFraction.Half))
-    music.rest(music.beat(BeatFraction.Half))
-    music.playTone(330, music.beat(BeatFraction.Half))
-    music.rest(music.beat(BeatFraction.Half))
-    music.playTone(262, music.beat(BeatFraction.Half))
-    music.rest(music.beat(BeatFraction.Half))
+    music.setVolume(1000 - spriteutils.distanceBetween(cameraplayer, playtime))
+    music.playTone(349, music.beat(BeatFraction.Whole))
+    music.playTone(349, music.beat(BeatFraction.Whole))
     music.playTone(294, music.beat(BeatFraction.Whole))
-    music.rest(music.beat(BeatFraction.Double))
-    music.rest(music.beat(BeatFraction.Whole))
-    music.setVolume(255)
-    music.playTone(196, music.beat(BeatFraction.Whole))
+    music.playTone(392, music.beat(BeatFraction.Whole))
+    music.playTone(349, music.beat(BeatFraction.Double))
+    music.playTone(294, music.beat(BeatFraction.Whole))
     music.rest(music.beat(BeatFraction.Half))
-    music.playTone(196, music.beat(BeatFraction.Half))
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.playTone(196, music.beat(BeatFraction.Half))
-    music.playTone(220, music.beat(BeatFraction.Triplet))
-    music.rest(music.beat(BeatFraction.Half))
-    music.playTone(233, music.beat(BeatFraction.Whole))
-    music.rest(music.beat(BeatFraction.Double))
+    music.setVolume(1000 - spriteutils.distanceBetween(cameraplayer, playtime))
+    music.playTone(294, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Triplet))
     for (let index = 0; index < 2; index++) {
-        music.playTone(196, music.beat(BeatFraction.Eighth))
-        music.rest(music.beat(BeatFraction.Eighth))
-        music.playTone(220, music.beat(BeatFraction.Eighth))
-        music.rest(music.beat(BeatFraction.Eighth))
-        music.playTone(233, music.beat(BeatFraction.Eighth))
-        music.rest(music.beat(BeatFraction.Eighth))
-        music.playTone(294, music.beat(BeatFraction.Eighth))
-        music.rest(music.beat(BeatFraction.Half))
+        music.playTone(311, music.beat(BeatFraction.Whole))
+        for (let index = 0; index < 3; index++) {
+            music.playTone(262, music.beat(BeatFraction.Whole))
+        }
+        music.setVolume(1000 - spriteutils.distanceBetween(cameraplayer, playtime))
     }
-    music.playTone(196, music.beat(BeatFraction.Whole))
-    music.rest(music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(349, music.beat(BeatFraction.Whole))
+    music.playTone(311, music.beat(BeatFraction.Whole))
+    music.playTone(294, music.beat(BeatFraction.Whole))
+    music.setVolume(1000 - spriteutils.distanceBetween(cameraplayer, playtime))
+    music.playTone(262, music.beat(BeatFraction.Whole))
+    music.playTone(294, music.beat(BeatFraction.Double))
+    music.playTone(233, music.beat(BeatFraction.Double))
+    music.rest(music.beat(BeatFraction.Double))
 })
 forever(function () {
     if (info.score() == 1) {
