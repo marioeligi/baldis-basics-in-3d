@@ -223,7 +223,11 @@ function Loaditems () {
     tiles.setTileAt(mySprite2.tilemapLocation(), assets.tile`transparency16`)
 }
 scene.onPathCompletion(SpriteKind.roebot, function (sprite, location) {
-    prizeeroadcar = scene.aStar(location, list[randint(0, 18)])
+    huh += 1
+    if (huh == 19) {
+        huh = 0
+    }
+    prizeeroadcar = scene.aStar(location, list[huh])
     scene.followPath(prize, prizeeroadcar)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
@@ -239,11 +243,23 @@ let mySprite2: Sprite = null
 let ppp: tiles.Location[] = []
 let principal: tiles.Location[] = []
 let prize: Sprite = null
-let cameraplayer: Sprite = null
 let playtime: Sprite = null
 let principle: Sprite = null
+let huh = 0
 let list: tiles.Location[] = []
 let prize_push_period = 0
+let cameraplayer: Sprite = null
+music.playTone(349, music.beat(BeatFraction.Double))
+music.playTone(415, music.beat(BeatFraction.Double))
+music.playTone(466, music.beat(BeatFraction.Whole))
+music.playTone(415, music.beat(BeatFraction.Whole))
+music.playTone(349, music.beat(BeatFraction.Whole))
+scene.setBackgroundColor(1)
+let mySprite = sprites.create(assets.image`TITLE SCREEN`, SpriteKind.Player)
+mySprite.setPosition(50, 25)
+cameraplayer = Render.getRenderSpriteVariable()
+Render.moveWithController(0, 0)
+story.showPlayerChoices("Play", "Credits", "How to Play")
 let playjin = 0
 scene.setBackgroundImage(img`
     9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
@@ -388,6 +404,7 @@ tiles.getTileLocation(30, 19),
 tiles.getTileLocation(30, 26),
 tiles.getTileLocation(17, 4)
 ]
+huh = 0
 principle = sprites.create(img`
     . . . . e e e . . . . 
     . . . e d d d e . . . 
@@ -446,7 +463,6 @@ playtime = sprites.create(img`
     . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . 
     `, SpriteKind.playyyy)
-cameraplayer = Render.getRenderSpriteVariable()
 Render.setViewMode(ViewMode.raycastingView)
 tiles.placeOnTile(cameraplayer, tiles.getTileLocation(1, 16))
 Render.moveWithController(2, 4)
@@ -504,7 +520,7 @@ forever(function () {
         music.playTone(196, music.beat(BeatFraction.Whole))
         music.rest(music.beat(BeatFraction.Whole))
     } else {
-        music.setVolume(1000 - spriteutils.distanceBetween(cameraplayer, playtime))
+        music.setVolume(255 - spriteutils.distanceBetween(cameraplayer, playtime))
         music.playTone(349, music.beat(BeatFraction.Double))
         music.playTone(294, music.beat(BeatFraction.Whole))
         music.playTone(392, music.beat(BeatFraction.Whole))
@@ -512,7 +528,7 @@ forever(function () {
         music.playTone(294, music.beat(BeatFraction.Whole))
         music.rest(music.beat(BeatFraction.Half))
         music.playTone(294, music.beat(BeatFraction.Half))
-        music.setVolume(1000 - spriteutils.distanceBetween(cameraplayer, playtime))
+        music.setVolume(255 - spriteutils.distanceBetween(cameraplayer, playtime))
         music.playTone(349, music.beat(BeatFraction.Whole))
         music.playTone(349, music.beat(BeatFraction.Whole))
         music.playTone(294, music.beat(BeatFraction.Whole))
@@ -520,7 +536,7 @@ forever(function () {
         music.playTone(349, music.beat(BeatFraction.Double))
         music.playTone(294, music.beat(BeatFraction.Whole))
         music.rest(music.beat(BeatFraction.Half))
-        music.setVolume(1000 - spriteutils.distanceBetween(cameraplayer, playtime))
+        music.setVolume(255 - spriteutils.distanceBetween(cameraplayer, playtime))
         music.playTone(294, music.beat(BeatFraction.Quarter))
         music.rest(music.beat(BeatFraction.Triplet))
         for (let index = 0; index < 2; index++) {
@@ -528,13 +544,13 @@ forever(function () {
             for (let index = 0; index < 3; index++) {
                 music.playTone(262, music.beat(BeatFraction.Whole))
             }
-            music.setVolume(1000 - spriteutils.distanceBetween(cameraplayer, playtime))
+            music.setVolume(255 - spriteutils.distanceBetween(cameraplayer, playtime))
         }
         music.rest(music.beat(BeatFraction.Quarter))
         music.playTone(349, music.beat(BeatFraction.Whole))
         music.playTone(311, music.beat(BeatFraction.Whole))
         music.playTone(294, music.beat(BeatFraction.Whole))
-        music.setVolume(1000 - spriteutils.distanceBetween(cameraplayer, playtime))
+        music.setVolume(255 - spriteutils.distanceBetween(cameraplayer, playtime))
         music.playTone(262, music.beat(BeatFraction.Whole))
         music.playTone(294, music.beat(BeatFraction.Double))
         music.playTone(233, music.beat(BeatFraction.Double))
@@ -826,7 +842,7 @@ forever(function () {
                 f f f . . . . . . . . . f f f 
                 `, SpriteKind.roebot)
             tiles.placeOnTile(prize, tiles.getTileLocation(12, 16))
-            prizeeroadcar = scene.aStar(principle.tilemapLocation(), principle.tilemapLocation())
+            prizeeroadcar = scene.aStar(principle.tilemapLocation(), list[0])
             scene.followPath(prize, prizeeroadcar, 50)
             bully = sprites.create(img`
                 . . . . . . e e e e . . . . . . 
