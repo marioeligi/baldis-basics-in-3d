@@ -52,6 +52,13 @@ scene.onPathCompletion(SpriteKind.riunning, function (sprite, location) {
     principal = scene.aStar(location, list[randint(0, 18)])
     scene.followPath(principle, principal)
 })
+function sha () {
+    music.playTone(349, music.beat(BeatFraction.Double))
+    music.playTone(415, music.beat(BeatFraction.Double))
+    music.playTone(466, music.beat(BeatFraction.Whole))
+    music.playTone(415, music.beat(BeatFraction.Whole))
+    music.playTone(349, music.beat(BeatFraction.Double))
+}
 sprites.onOverlap(SpriteKind.Player, SpriteKind.playyyy, function (sprite, otherSprite) {
     Render.moveWithController(0)
     for (let index = 0; index < 5; index++) {
@@ -249,16 +256,12 @@ let huh = 0
 let list: tiles.Location[] = []
 let prize_push_period = 0
 let cameraplayer: Sprite = null
-music.playTone(349, music.beat(BeatFraction.Double))
-music.playTone(415, music.beat(BeatFraction.Double))
-music.playTone(466, music.beat(BeatFraction.Whole))
-music.playTone(415, music.beat(BeatFraction.Whole))
-music.playTone(349, music.beat(BeatFraction.Whole))
 scene.setBackgroundColor(1)
 let mySprite = sprites.create(assets.image`TITLE SCREEN`, SpriteKind.Player)
 mySprite.setPosition(50, 25)
 cameraplayer = Render.getRenderSpriteVariable()
 Render.moveWithController(0, 0)
+sha()
 story.showPlayerChoices("Play", "Credits", "How to Play")
 let playjin = 0
 scene.setBackgroundImage(img`
